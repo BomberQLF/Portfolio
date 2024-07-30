@@ -5,10 +5,6 @@
 }
 
 .hero_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   color: #ede8e4;
   width: 100%;
 }
@@ -16,13 +12,14 @@
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding: 7%;
+  padding: 9%;
   width: 100%;
 }
 .hero_section .hero .year_of_birth,
 .hero_section .hero .date_of_birth,
 .hero_section .hero .hobby,
-.hero_section .hero .sport {
+.hero_section .hero .sport,
+.hero_section .hero .year {
   min-width: max-content;
   font-family: "PP Neue Montreal", sans-serif;
   font-weight: 100;
@@ -53,6 +50,61 @@
   font-family: "PP Neue Montreal", sans-serif;
   text-transform: uppercase;
   font-size: 1.3rem;
+}
+.hero_section .hero_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_section .hero_bottom nav {
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+}
+.hero_section .hero_bottom ul {
+  list-style: none;
+  display: flex;
+}
+.hero_section .hero_bottom ul li {
+  margin: 5%;
+}
+.hero_section .hero_bottom ul a {
+  text-decoration: none;
+  color: #ede8e4;
+  margin-right: 3rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #ede8e4;
+  padding-bottom: 1px;
+}
+.hero_section .hero_bottom .bottom_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10rem;
+}
+.hero_section .hero_bottom .bottom_center h2 {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.hero_section .hero_bottom .bottom_text {
+  width: 15%;
+}
+.hero_section .hero_bottom .bottom_text .first_part,
+.hero_section .hero_bottom .bottom_text .second_part,
+.hero_section .hero_bottom .bottom_text .third_part {
+  border-top: 1px solid #ede8e4;
+  border-bottom: 1px solid #ede8e4;
+}
+.hero_section .hero_bottom .bottom_text .first_part span,
+.hero_section .hero_bottom .bottom_text .second_part span,
+.hero_section .hero_bottom .bottom_text .third_part span {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "PP Neue Montreal", sans-serif;
 }
 
 body {
