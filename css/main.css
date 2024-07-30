@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hero_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ede8e4;
+  width: 100%;
+}
+.hero_section .hero {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 7%;
+  width: 100%;
+}
+.hero_section .hero .year_of_birth,
+.hero_section .hero .date_of_birth,
+.hero_section .hero .hobby,
+.hero_section .hero .sport {
+  min-width: max-content;
+  font-family: "PP Neue Montreal", sans-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.hero_section .hero .hero_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero_section .hero .hero_center svg {
+  width: 50px;
+  height: 50px;
+}
+.hero_section .hero .hero_center h1 {
+  font-size: 5.5rem;
+  text-align: center;
+  font-family: "PP Neue Montreal", sans-serif;
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+.hero_section .hero .hero_center h2 {
+  font-family: "PP Neue Montreal", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+/*# sourceMappingURL=main.css.map */

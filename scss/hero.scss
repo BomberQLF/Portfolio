@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$font-family-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
+$font-color-beige: #ede8e4;
+$font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
+
+
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: $font-color-beige;
+    width: 100%;
+
+    .hero {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        padding: 7%;
+        width: 100%;
+
+        .year_of_birth,
+        .date_of_birth,
+        .hobby,
+        .sport {
+            min-width: max-content;
+            font-family: $font-family-pp-neue-montreal;
+            font-weight: 100;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .hero_center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+
+            h1 {
+                font-size: 5.5rem;
+                text-align: center;
+                font-family: $font-family-pp-neue-montreal;
+                padding: 2vh 0;
+                display: flex;
+                flex-direction: column;
+                line-height: 0.88;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-family: $font-family-pp-neue-montreal;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
