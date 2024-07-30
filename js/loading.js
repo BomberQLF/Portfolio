@@ -1,18 +1,11 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     window.onload = function() {
-//         const heroSection = document.querySelector('.hero_section');
-//         const hero = document.querySelector('.hero');
-//         const svg = document.querySelector('.hero svg');
-      
-//         // Start the animation after a delay to ensure everything is loaded
-//         setTimeout(() => {
-//           svg.classList.add('move');
-//         }, 1000); // Delay before starting the animation
-      
-//         // Show HTML elements after SVG animation is complete
-//         svg.addEventListener('transitionend', () => {
-//           heroSection.classList.add('show');
-//           document.body.style.overflow = 'auto'; // Allow scrolling after animation
-//         });
-//       };
-// })
+document.addEventListener('DOMContentLoaded', () => {
+    const loadingContainer = document.querySelector('.loading_container');
+    const heroSection = document.querySelector('.hero_section');
+  
+    // Affiche la hero_section après la fin de l'animation de chargement
+    setTimeout(() => {
+      loadingContainer.style.display = 'none';
+      heroSection.style.display = 'inline'; // Change le display pour afficher la section
+      heroSection.classList.add('show');
+    }, 4000); // 3000 ms correspond au temps de l'animation
+  });
