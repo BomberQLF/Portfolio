@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/loading.js" defer></script>
+    <script src="/js/vanta-dark.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://unpkg.com/vanta/dist/vanta.cells.min.js"></script>
     <title>Tom Murphy Portfolio</title>
 </head>
 <body>
@@ -20,7 +23,11 @@
     </div>
 
     <!-- Hero section -->
-    <section class="hero_section">
+    <section class="hero_section" id="hero_section">
+        <div class="contact_nav">
+            <a href="#">Contact</a>
+        </div>
+        <div id="vanta-bg"></div>
         <div class="hero">
             <div class="year_of_birth">
                 <span>2005</span>
@@ -72,5 +79,6 @@
             </div>
         </div>
     </section>
+
 </body>
 </html>
