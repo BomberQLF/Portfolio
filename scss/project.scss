@@ -1,0 +1,61 @@
+$font-family-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
+$font-color-beige: #ede8e4;
+$font-color-blackish: #0e0e0e;
+$font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
+
+.project_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .grid_design {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 3fr 1fr;
+        z-index: 4;
+        gap: 113px;
+    }
+
+    .title {
+        display: flex;
+        align-items: flex-start; 
+
+        .title_before {
+            position: absolute;
+            left: 310px;
+            padding: 30px;
+            color: $font-color-beige;
+            text-transform: uppercase;
+            font-family: $font-family-ibm-plex-mono;
+
+            .upper_text {
+                text-align: right;
+                text-transform: uppercase;
+            }
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: $font-color-beige;
+            font-size: 7rem;
+            margin: 0;
+            font-family: $font-family-pp-neue-montreal;
+        }
+
+        .title_after {
+            padding: 30px;
+            color: $font-color-beige;
+            text-transform: uppercase;
+            font-family: $font-family-ibm-plex-mono;
+            align-self: flex-end;
+            position: absolute;
+            right: 330px;
+        }
+    }
+}
