@@ -7,7 +7,7 @@
     <script src="js/loading.js" defer></script>
     <script src="/js/vanta-dark.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://unpkg.com/vanta/dist/vanta.cells.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
     <title>Tom Murphy Portfolio</title>
 </head>
 <header>
@@ -83,39 +83,44 @@
         </div>
     </section>
 
-    <!-- Project Section -->
-    <section class="project_section hidden">
-        <div class="project_container">
-            <div class="title">
-                <div class="title_before">
-                    <div class="upper_text"><span>Some</span></div>
-                    <div class="lower_text"><span>Selected</span></div>
-                </div>
-                <h2>Projects</h2>
-            </div>
-        </div>
-        <div class="project_container">
-            <div class="title">
-                <h2>Made</h2>
-                <div class="title_after">
+    <main>
+        <!-- Project Section -->
+        <section class="project_section hidden">
+            <div class="project_container">
+                <div class="title">
+                    <div class="title_before">
+                        <div class="upper_text"><span>Some</span></div>
+                        <div class="lower_text"><span>Selected</span></div>
+                    </div>
+                    <h2>Projects</h2>
                 </div>
             </div>
-        </div>
-        <div class="project_container">
-            <div class="title">
-                <h2>With</h2>
-            </div>
-        </div>
-        <div class="project_container">
-            <div class="title">
-                <h2>Passion</h2>
-                <div class="title_after">
-                    <div class="upper_text"><span>Thanks</span></div>
-                    <div class="lower_text">To BUT MMI</div>
+            <div class="project_container">
+                <div class="title">
+                    <h2>Made</h2>
+                    <div class="title_after">
+                    </div>
                 </div>
-                <div class="subtitle"></div>
             </div>
-        </div>
-    </section>
+            <div class="project_container">
+                <div class="title">
+                    <h2>With</h2>
+                </div>
+            </div>
+            <div class="project_container">
+                <div class="title">
+                    <h2>Passion</h2>
+                    <div class="title_after">
+                        <div class="upper_text"><span>Thanks</span></div>
+                        <div class="lower_text">To BUT MMI</div>
+                    </div>
+                    <div class="subtitle"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Displayed Projects -->
+        <section class="displayed_projects" style="height: 100vh;">
+        </section>
+    </main>
 </body>
 </html>
