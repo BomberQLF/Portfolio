@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -131,7 +132,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .hero_section .hero_bottom nav {
   display: flex;
@@ -190,6 +191,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0 2rem; /* Ajout d'une marge sur les côtés */
 }
 .project_section .title {
   display: flex;
@@ -224,9 +226,86 @@
   right: 330px;
 }
 
+.scrolling-text {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: -7.2rem;
+  background-color: #0e0e0e;
+  color: #ede8e4;
+  font-family: "PP Neue Montreal", sans-serif;
+  font-size: 6rem;
+  padding: 40px 0;
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+.scrolling-text-content {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.scrolling-text span {
+  padding: 0 2rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.displayed_projects {
+  height: 70vh;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+.displayed_projects .img_container {
+  display: flex;
+  gap: 3rem;
+}
+.displayed_projects .img_container img {
+  max-width: calc(50vw - 3rem);
+  height: auto;
+}
+.displayed_projects .img_container span {
+  font-family: "IBM Plex Mono", monospace;
+  color: #ede8e4;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.displayed_projects .img_container h3 {
+  color: #ede8e4;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "PP Neue Montreal", sans-serif;
+  margin-top: 5px;
+  padding: 10px 0 1rem 0;
+  border-bottom: 1px solid white;
+}
+.displayed_projects .more_projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.displayed_projects .more_projects a {
+  color: #ede8e4;
+  text-transform: uppercase;
+  font-family: "PP Neue Montreal", sans-serif;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding: 1px 0;
+  font-size: 2.2rem;
+}
+
 body {
   background-color: #0e0e0e;
   margin: 0;
+}
+body main {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
