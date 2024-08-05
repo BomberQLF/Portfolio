@@ -117,17 +117,16 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
 
     .more_projects {
         display: flex;
-        justify-content: center;
         margin-top: 3rem;
 
         a {
             color: $font-color-beige;
             text-transform: uppercase;
-            font-family: $font-family-pp-neue-montreal;
+            font-family: $font-family-ibm-plex-mono;
             text-decoration: none;
             border-bottom: 1px solid white;
             padding: 1px 0;
-            font-size: 2.2rem;
+            font-size: 1.5rem;
         }
     }
 

@@ -287,17 +287,16 @@
 }
 .displayed_projects .more_projects {
   display: flex;
-  justify-content: center;
   margin-top: 3rem;
 }
 .displayed_projects .more_projects a {
   color: #ede8e4;
   text-transform: uppercase;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
   border-bottom: 1px solid white;
   padding: 1px 0;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 body {
