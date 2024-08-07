@@ -89,7 +89,7 @@
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding: 9%;
+  padding: 11%;
   width: 100%;
 }
 .hero_section .hero .year_of_birth,
@@ -262,6 +262,16 @@
   padding: 0 2rem;
   gap: 3rem;
 }
+.displayed_projects .title_display {
+  color: #ede8e4;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  position: relative;
+  top: -1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0.5;
+}
 .displayed_projects .img_container {
   display: flex;
   gap: 3rem;
@@ -269,6 +279,7 @@
 .displayed_projects .img_container img {
   max-width: calc(50vw - 3rem);
   height: auto;
+  padding-bottom: 1rem;
 }
 .displayed_projects .img_container span {
   font-family: "IBM Plex Mono", monospace;
@@ -282,8 +293,6 @@
   text-transform: uppercase;
   font-family: "PP Neue Montreal", sans-serif;
   margin-top: 5px;
-  padding: 10px 0 1rem 0;
-  border-bottom: 1px solid white;
 }
 .displayed_projects .more_projects {
   display: flex;
@@ -294,9 +303,12 @@
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
-  border-bottom: 1px solid white;
-  padding: 1px 0;
   font-size: 1.5rem;
+  border-bottom: #ede8e4 1px solid;
+  padding-bottom: 1px;
+}
+.displayed_projects .more_projects a svg {
+  margin-left: 1rem;
 }
 
 body {

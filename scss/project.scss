@@ -83,9 +83,20 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
 }
 
 .displayed_projects {
-    height: 70vh;
+    height: 100vh;
     padding: 0 2rem; 
     gap: 3rem; 
+
+    .title_display {
+        color: $font-color-beige;
+        font-family: $font-family-ibm-plex-mono;
+        text-transform: uppercase;
+        position: relative;
+        top: -1.5rem;
+        display: flex;
+        gap: 0.5rem;
+        opacity: .5;
+    }
 
     .img_container {
         display: flex;
@@ -94,6 +105,7 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
         img {
             max-width: calc(50vw - 3rem); 
             height: auto;
+            padding-bottom: 1rem;
         }
 
         span {
@@ -109,8 +121,6 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
             text-transform: uppercase;
             font-family: "PP Neue Montreal", sans-serif;
             margin-top: 5px;
-            padding: 10px 0 1rem 0;
-            border-bottom: 1px solid white;
         }
        }
 
@@ -124,9 +134,13 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
             text-transform: uppercase;
             font-family: $font-family-ibm-plex-mono;
             text-decoration: none;
-            border-bottom: 1px solid white;
-            padding: 1px 0;
             font-size: 1.5rem;
+            border-bottom: $font-color-beige 1px solid;
+            padding-bottom: 1px;
+
+            svg {
+                margin-left: 1rem;
+            }
         }
     }
 
