@@ -1,0 +1,73 @@
+$font-family-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
+$font-color-beige: #D9D9D9AD;
+$font-color-blackish: #0e0e0e;
+$font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
+
+.skills_section {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem; 
+
+    .skills_container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; 
+
+        .upper_container,
+        .lower_container {
+            display: flex;
+            justify-content: space-between; 
+            gap: 14rem;
+
+            .upper_skills,
+            .lower_skills {
+                max-width: 45%; 
+                width: 100%;
+            }
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                h3 {
+                    font-size: 1.7rem;
+                    font-family: $font-family-pp-neue-montreal;
+                    color: rgba(255, 255, 255, 0.732);
+                    text-transform: uppercase;
+                }
+                span {
+                    font-size: 1rem;
+                    font-family: $font-family-ibm-plex-mono;
+                    color: $font-color-beige;
+                }
+            }
+
+            .under_skills_container {
+                display: flex;
+                justify-content: space-between; 
+
+                .left_side,
+                .right_side {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px; 
+                    width: 45%; 
+
+                    .under_skills {
+                        font-size: 1.05rem;
+                        color: $font-color-beige;
+                        text-transform: uppercase;
+                        font-family: $font-family-pp-neue-montreal;
+                        padding-bottom: 12px;
+                        padding-right: 10rem;
+                        border-bottom: 1px solid rgb(81, 80, 80);
+                    }
+                }
+            }
+        }
+    }
+}

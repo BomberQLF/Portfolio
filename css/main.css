@@ -52,7 +52,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   width: 100%;
   display: none;
   animation: fadeIn 5s forwards;
@@ -67,7 +67,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  border-bottom: 1px solid #ede8e4;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.6784313725);
   font-family: "IBM Plex Mono", monospace;
 }
 .hero_section #vanta-bg {
@@ -149,13 +149,13 @@
 }
 .hero_section .hero_bottom nav ul a {
   text-decoration: none;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   margin-right: 3rem;
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   position: relative;
   font-size: 0.8rem;
-  border-bottom: 1px solid #ede8e4;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.6784313725);
   padding-bottom: 1px;
 }
 .hero_section .hero_bottom .bottom_center {
@@ -175,8 +175,8 @@
 .hero_section .hero_bottom .bottom_text .first_part,
 .hero_section .hero_bottom .bottom_text .second_part,
 .hero_section .hero_bottom .bottom_text .third_part {
-  border-top: 1px solid #ede8e4;
-  border-bottom: 1px solid #ede8e4;
+  border-top: 1px solid rgba(217, 217, 217, 0.6784313725);
+  border-bottom: 1px solid rgba(217, 217, 217, 0.6784313725);
 }
 .hero_section .hero_bottom .bottom_text .first_part span,
 .hero_section .hero_bottom .bottom_text .second_part span,
@@ -202,7 +202,7 @@
   position: absolute;
   left: 310px;
   padding: 30px;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -212,14 +212,14 @@
 }
 .project_section .title h2 {
   text-transform: uppercase;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   font-size: 7rem;
   margin: 0;
   font-family: "PP Neue Montreal", sans-serif;
 }
 .project_section .title .title_after {
   padding: 30px;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
   align-self: flex-end;
@@ -233,7 +233,7 @@
   position: relative;
   top: -7.2rem;
   background-color: #0e0e0e;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 6rem;
   padding: 40px 0;
@@ -264,7 +264,7 @@
   gap: 3rem;
 }
 .displayed_projects .title_display {
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   position: relative;
@@ -284,12 +284,12 @@
 }
 .displayed_projects .img_container span {
   font-family: "IBM Plex Mono", monospace;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   font-size: 1.1rem;
   text-transform: uppercase;
 }
 .displayed_projects .img_container h3 {
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.7960784314);
   font-size: 1.8rem;
   text-transform: uppercase;
   font-family: "PP Neue Montreal", sans-serif;
@@ -300,12 +300,12 @@
   margin-top: 3rem;
 }
 .displayed_projects .more_projects a {
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
   font-size: 1.5rem;
-  border-bottom: #ede8e4 1px solid;
+  border-bottom: rgba(217, 217, 217, 0.6784313725) 1px solid;
   padding-bottom: 1px;
 }
 .displayed_projects .more_projects a svg {
@@ -331,11 +331,83 @@
 }
 .about_me .description_about p {
   line-height: 3.6rem;
-  color: #ede8e4;
+  color: rgba(217, 217, 217, 0.6784313725);
   font-size: 2.5rem;
   font-family: "PP Neue Montreal", sans-serif;
   opacity: 0.5;
   margin-left: 3rem;
+}
+
+.skills_section {
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.skills_section .skills_container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.skills_section .skills_container .upper_container,
+.skills_section .skills_container .lower_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 14rem;
+}
+.skills_section .skills_container .upper_container .upper_skills,
+.skills_section .skills_container .upper_container .lower_skills,
+.skills_section .skills_container .lower_container .upper_skills,
+.skills_section .skills_container .lower_container .lower_skills {
+  max-width: 45%;
+  width: 100%;
+}
+.skills_section .skills_container .upper_container .title,
+.skills_section .skills_container .lower_container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.skills_section .skills_container .upper_container .title h3,
+.skills_section .skills_container .lower_container .title h3 {
+  font-size: 1.7rem;
+  font-family: "PP Neue Montreal", sans-serif;
+  color: rgba(255, 255, 255, 0.732);
+  text-transform: uppercase;
+}
+.skills_section .skills_container .upper_container .title span,
+.skills_section .skills_container .lower_container .title span {
+  font-size: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: rgba(217, 217, 217, 0.6784313725);
+}
+.skills_section .skills_container .upper_container .under_skills_container,
+.skills_section .skills_container .lower_container .under_skills_container {
+  display: flex;
+  justify-content: space-between;
+}
+.skills_section .skills_container .upper_container .under_skills_container .left_side,
+.skills_section .skills_container .upper_container .under_skills_container .right_side,
+.skills_section .skills_container .lower_container .under_skills_container .left_side,
+.skills_section .skills_container .lower_container .under_skills_container .right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 45%;
+}
+.skills_section .skills_container .upper_container .under_skills_container .left_side .under_skills,
+.skills_section .skills_container .upper_container .under_skills_container .right_side .under_skills,
+.skills_section .skills_container .lower_container .under_skills_container .left_side .under_skills,
+.skills_section .skills_container .lower_container .under_skills_container .right_side .under_skills {
+  font-size: 1.05rem;
+  color: rgba(217, 217, 217, 0.6784313725);
+  text-transform: uppercase;
+  font-family: "PP Neue Montreal", sans-serif;
+  padding-bottom: 12px;
+  padding-right: 10rem;
+  border-bottom: 1px solid rgb(81, 80, 80);
 }
 
 body {
