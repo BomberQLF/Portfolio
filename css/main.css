@@ -227,6 +227,10 @@
   right: 330px;
 }
 
+#scrolling-work {
+  margin-top: 3rem;
+}
+
 .scrolling-text {
   width: 100%;
   overflow: hidden;
@@ -236,7 +240,6 @@
   color: rgba(217, 217, 217, 0.6784313725);
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 6rem;
-  padding: 40px 0;
   margin-top: 40px;
   white-space: nowrap;
 }
@@ -250,12 +253,24 @@
   padding: 0 2rem;
 }
 
+#reverse .scrolling-text-content {
+  animation: scroll-reverse 20s linear infinite;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 .displayed_projects {
@@ -336,6 +351,10 @@
   font-family: "PP Neue Montreal", sans-serif;
   opacity: 0.5;
   margin-left: 3rem;
+}
+
+.skills-scroll {
+  top: 10rem;
 }
 
 .skills_section {

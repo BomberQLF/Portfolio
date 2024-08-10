@@ -50,6 +50,10 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
     }
 }
 
+#scrolling-work {
+    margin-top: 3rem;
+}
+
 .scrolling-text {
     width: 100%;
     overflow: hidden;
@@ -59,7 +63,6 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
     color: $font-color-beige;
     font-family: $font-family-pp-neue-montreal;
     font-size: 6rem;
-    padding: 40px 0;
     margin-top: 40px;
     white-space: nowrap;
 }
@@ -73,12 +76,25 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
     padding: 0 2rem;
 }
 
+#reverse .scrolling-text-content {
+    animation: scroll-reverse 20s linear infinite;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0%);
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 
