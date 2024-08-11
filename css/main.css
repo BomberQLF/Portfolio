@@ -432,8 +432,50 @@
 .contact {
   height: 100vh;
   display: flex;
+  align-items: center;
+}
+.contact .contact-container {
+  width: 95vw;
+  height: 70vh;
+  display: grid;
+  grid-template-rows: repeat(4, 0.8fr);
+}
+.contact .contact-container .div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: 1/2/3/6;
+  border: grey 1px solid;
+  color: #1c1a13;
+  background-color: rgb(134, 132, 132);
+  font-size: 10rem;
+  font-family: "PP Neue Montreal", sans-serif;
+  font-weight: 500;
+}
+.contact .contact-container .div2 {
+  display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: 1/6/3/8;
+  border: grey 1px solid;
+  background-color: #0e0e0e;
+  font-family: "PP Neue Montreal", sans-serif;
+}
+.contact .contact-container .div2 svg {
+  width: 200px;
+  height: 200px;
+}
+.contact .contact-container .div3 {
+  grid-area: 3/2/4/5;
+  border: grey 1px solid;
+}
+.contact .contact-container .div4 {
+  grid-area: 3/5/4/8;
+  border: grey 1px solid;
+}
+.contact .contact-container .div5 {
+  grid-area: 4/2/5/8;
+  border: grey 1px solid;
 }
 
 body {
