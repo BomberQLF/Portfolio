@@ -465,6 +465,27 @@
   width: 200px;
   height: 200px;
 }
+.contact .contact-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.contact .contact-container form input, .contact .contact-container form textarea, .contact .contact-container form button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  font-family: "PP Neue Montreal", sans-serif;
+}
+.contact .contact-container form button {
+  background-color: #0e0e0e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 .contact .contact-container .div3 {
   grid-area: 3/2/4/5;
   border: grey 1px solid;

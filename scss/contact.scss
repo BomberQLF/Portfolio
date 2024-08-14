@@ -15,8 +15,6 @@ $font-color-contact-black: #1C1A13FF;
         height: 70vh; 
         display: grid;
         grid-template-rows: repeat(4, 0.8fr);  
-        // grid-column-gap: 10px;  
-        // grid-row-gap: 10px;  
 
         .div1 { 
             display: flex;
@@ -43,6 +41,30 @@ $font-color-contact-black: #1C1A13FF;
             svg {
                 width: 200px;
                 height: 200px;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            input, textarea, button {
+                margin-top: 10px;
+                padding: 10px;
+                font-size: 1rem;
+                border: 1px solid grey;
+                border-radius: 4px;
+                background-color: #fff;
+                color: #000;
+                font-family: $font-family-pp-neue-montreal;
+            }
+            
+            button {
+                background-color: #0e0e0e;
+                color: #fff;
+                border: none;
+                cursor: pointer;
             }
         }
 
