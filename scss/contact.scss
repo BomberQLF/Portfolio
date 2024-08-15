@@ -49,38 +49,53 @@ $font-color-contact-black: #1C1A13FF;
             flex-direction: column;
             padding: 20px;
 
-            input, textarea, button {
-                margin-top: 10px;
-                padding: 10px;
-                font-size: 1rem;
-                border: 1px solid grey;
-                border-radius: 4px;
-                background-color: #fff;
-                color: #000;
+            label {
                 font-family: $font-family-pp-neue-montreal;
+                color: white;
             }
+
+            input, textarea {
+                background-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.2); 
+                color: rgba(255, 255, 255, 0.2); 
+                opacity: 0.7;
+                font-size: 1rem;
+                padding: 10px;
+                margin-top: 20px;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+                font-family: $font-family-ibm-plex-mono;
             
-            button {
-                background-color: #0e0e0e;
-                color: #fff;
-                border: none;
-                cursor: pointer;
+                &:focus {
+                    outline: none;
+                    border-color: rgba(255, 255, 255, 0.7);
+                    color: rgba(255, 255, 255, 0.9);
+                    opacity: 1; 
+                }
+            
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.5); 
+                }
             }
         }
 
-        .div3 { 
+        .name_input { 
             grid-area: 3 / 2 / 4 / 5; 
             border: grey 1px solid;
         }
 
-        .div4 { 
+        .email_input { 
             grid-area: 3 / 5 / 4 / 8; 
             border: grey 1px solid;
         }
 
-        .div5 { 
+        .message_input { 
             grid-area: 4 / 2 / 5 / 8; 
             border: grey 1px solid;
+        }
+
+        .submit_btn {
+            grid-area: 5 / 2 / 5 / 2;;
         }
     }
 }
