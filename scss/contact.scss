@@ -7,203 +7,206 @@ $font-color-contact-black: #1C1A13FF;
 $font-color-bg-blue-form: #4430cf;
 $font-color-whiteish: #f1F1f1;
 
+
 .contact {
     // height: 100vh;
     display: flex;
     align-items: center;
 
-    .contact-container {
-        width: 95vw;
-        height: 70vh; 
-        display: grid;
-        grid-template-rows: repeat(4, 0.8fr);  
-
-        .div1 { 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-area: 1 / 2 / 3 / 6; 
-            border: grey 1px solid;
-            color: $font-color-contact-black;
-            background-color: rgb(134, 132, 132);
-            font-size: 10rem;
-            font-family: $font-family-pp-neue-montreal;
-            font-weight: 500;
-        }
-
-        .div2 { 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            grid-area: 1 / 6 / 3 / 8; 
-            border: grey 1px solid;
-            background-color: #0e0e0e;
-            font-family: $font-family-pp-neue-montreal;
-
-            svg {
-                width: 200px;
-                height: 200px;
-            }
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-
-            label {
-                font-family: $font-family-pp-neue-montreal;
-                color: $font-color-whiteish;
-            }
-
-            input, textarea {
-                background-color: transparent;
-                border: 1px solid rgba(255, 255, 255, 0.2); 
-                color: rgba(255, 255, 255, 0.2); 
-                opacity: 0.7;
-                font-size: 1rem;
-                padding: 10px;
-                margin-top: 20px;
-                border-radius: 4px;
-                transition: all 0.3s ease;
-                font-family: $font-family-ibm-plex-mono;
-            
-                &:focus {
-                    outline: none;
-                    border-color: rgba(255, 255, 255, 0.7);
-                    color: rgba(255, 255, 255, 0.9);
-                    opacity: 1; 
-                }
-            
-                &::placeholder {
-                    color: rgba(255, 255, 255, 0.5); 
-                }
-            }
-        }
-
-        .name_input { 
-            grid-area: 3 / 2 / 4 / 5; 
-            border: grey 1px solid;
-        }
-
-        .email_input { 
-            grid-area: 3 / 5 / 4 / 8; 
-            border: grey 1px solid;
-        }
-
-        .message_input { 
-            grid-area: 4 / 2 / 5 / 8; 
-            border: grey 1px solid;
-        }
-    }
-}
-
-.confirmation_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: $font-color-whiteish;
-    padding: 3rem 0 3rem 0;
-
-    .captcha {
-        padding-right: 9rem;
-        font-size: 2rem;
-
-        label {
-            font-family: $font-family-pp-neue-montreal;
-
-            span {
-                color: $font-color-beige;
-            }
-        }
-    }
-
-    .submit_container {
+    form {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        padding: 20px;
+    
+        label {
+            font-family: $font-family-pp-neue-montreal;
+            color: $font-color-whiteish;
+        }
+    
+        input, textarea {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+            color: rgba(255, 255, 255, 0.2); 
+            opacity: 0.7;
+            font-size: 1rem;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-family: $font-family-ibm-plex-mono;
+        
+            &:focus {
+                outline: none;
+                border-color: rgba(255, 255, 255, 0.7);
+                color: rgba(255, 255, 255, 0.9);
+                opacity: 1; 
+            }
+        
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.5); 
+            }
+        }
+    }
+    
+    .name_input { 
+        grid-area: 3 / 2 / 4 / 5; 
+        border: grey 1px solid;
+    }
+    
+    .email_input { 
+        grid-area: 3 / 5 / 4 / 8; 
+        border: grey 1px solid;
+    }
+    
+    .message_input { 
+        grid-area: 4 / 2 / 5 / 8; 
+        border: grey 1px solid;
+    }
 
-        .items_container {
-            display: flex;
-            height: 3rem;
-            color: $font-color-contact-black;
+        .contact-container {
+            width: 95vw;
+            height: 70vh; 
+            display: grid;
+            grid-template-rows: repeat(4, 0.8fr);  
 
-            .confirm-item {
-                .confirmation-items {
-                    padding-right: 7.5rem;
-                    font-family: "PP Neue Montreal", sans-serif;
-                    margin-left: 10%;
-                    font-size: 0.85rem;
-                }
+            .div1 { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-area: 1 / 2 / 3 / 6; 
+                border: grey 1px solid;
+                color: $font-color-contact-black;
+                background-color: rgb(134, 132, 132);
+                font-size: 10rem;
+                font-family: $font-family-pp-neue-montreal;
+                font-weight: 500;
+            }
+
+            .div2 { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: 1 / 6 / 3 / 8; 
+                border: grey 1px solid;
+                background-color: #0e0e0e;
+                font-family: $font-family-pp-neue-montreal;
 
                 svg {
-                    height: 20px;
-                    width: 20px;
-                    margin-right: 10%;
+                    width: 200px;
+                    height: 200px;
                 }
-            }
-            .confirm-name {
-                background-color: #7a7a7a;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .confirm-email {
-                background-color: $font-color-beige;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .confirm-message {
-                background-color: $font-color-whiteish;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .confirm-captcha {
-                background-color: #0e0e0e;
-                color: $font-color-whiteish;
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
         }
 
-        button {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: $font-color-bg-blue-form;
-            height: 3rem;
-            border: none;
-        
-            &:hover {
-                cursor: pointer;
-            } 
-        
-            .invisible {
-                opacity: 0;
-            }
-        
-            .submit_text {
+    .confirmation_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: $font-color-whiteish;
+        padding: 3rem 0 2rem 0;
+    
+        .captcha {
+            padding-right: 2rem;
+            font-size: 2rem;
+    
+            label {
                 font-family: $font-family-pp-neue-montreal;
-                display: flex;
-                align-items: center;
-        
+    
                 span {
+                    color: $font-color-beige;
+                }
+            }
+        }
+    
+        .submit_container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-left: 3rem;
+    
+            .items_container {
+                display: flex;
+                height: 3rem;
+                color: $font-color-contact-black;
+    
+                .confirm-item {
+                    .confirmation-items {
+                        padding-right: 7.5rem;
+                        font-family: "PP Neue Montreal", sans-serif;
+                        margin-left: 10%;
+                        font-size: 0.85rem;
+                    }
+    
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 10%;
+                    }
+                }
+                .confirm-name {
+                    background-color: #7a7a7a;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .confirm-email {
+                    background-color: $font-color-beige;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .confirm-message {
+                    background-color: $font-color-whiteish;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .confirm-captcha {
+                    background-color: #0e0e0e;
+                    color: $font-color-whiteish;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+    
+            button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $font-color-bg-blue-form;
+                height: 3rem;
+                border: none;
+            
+                &:hover {
+                    cursor: pointer;
+                } 
+            
+                .invisible {
+                    opacity: 0;
+                }
+            
+                .submit_text {
+                    font-family: $font-family-pp-neue-montreal;
                     display: flex;
                     align-items: center;
-                    margin-right: 20px;
-                    color: $font-color-whiteish;
-                    font-size: 1.35rem;
-                }
-        
-                svg {
-                    margin-left: 10px;
-                    width: 30px;
-                    height: 30px;
+            
+                    span {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                        color: $font-color-whiteish;
+                        font-size: 1.35rem;
+                    }
+            
+                    svg {
+                        margin-left: 10px;
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
             }
         }
     }
 }
+

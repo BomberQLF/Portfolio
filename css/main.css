@@ -433,6 +433,48 @@
   display: flex;
   align-items: center;
 }
+.contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.contact form label {
+  font-family: "PP Neue Montreal", sans-serif;
+  color: #f1F1f1;
+}
+.contact form input, .contact form textarea {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+  opacity: 0.7;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: "IBM Plex Mono", monospace;
+}
+.contact form input:focus, .contact form textarea:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact .name_input {
+  grid-area: 3/2/4/5;
+  border: grey 1px solid;
+}
+.contact .email_input {
+  grid-area: 3/5/4/8;
+  border: grey 1px solid;
+}
+.contact .message_input {
+  grid-area: 4/2/5/8;
+  border: grey 1px solid;
+}
 .contact .contact-container {
   width: 95vw;
   height: 70vh;
@@ -464,113 +506,71 @@
   width: 200px;
   height: 200px;
 }
-.contact .contact-container form {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-.contact .contact-container form label {
-  font-family: "PP Neue Montreal", sans-serif;
-  color: #f1F1f1;
-}
-.contact .contact-container form input, .contact .contact-container form textarea {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.2);
-  opacity: 0.7;
-  font-size: 1rem;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  font-family: "IBM Plex Mono", monospace;
-}
-.contact .contact-container form input:focus, .contact .contact-container form textarea:focus {
-  outline: none;
-  border-color: rgba(255, 255, 255, 0.7);
-  color: rgba(255, 255, 255, 0.9);
-  opacity: 1;
-}
-.contact .contact-container form input::placeholder, .contact .contact-container form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.contact .contact-container .name_input {
-  grid-area: 3/2/4/5;
-  border: grey 1px solid;
-}
-.contact .contact-container .email_input {
-  grid-area: 3/5/4/8;
-  border: grey 1px solid;
-}
-.contact .contact-container .message_input {
-  grid-area: 4/2/5/8;
-  border: grey 1px solid;
-}
-
-.confirmation_container {
+.contact .confirmation_container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: #f1F1f1;
-  padding: 3rem 0 3rem 0;
+  padding: 3rem 0 2rem 0;
 }
-.confirmation_container .captcha {
-  padding-right: 9rem;
+.contact .confirmation_container .captcha {
+  padding-right: 2rem;
   font-size: 2rem;
 }
-.confirmation_container .captcha label {
+.contact .confirmation_container .captcha label {
   font-family: "PP Neue Montreal", sans-serif;
 }
-.confirmation_container .captcha label span {
+.contact .confirmation_container .captcha label span {
   color: rgba(217, 217, 217, 0.6784313725);
 }
-.confirmation_container .submit_container {
+.contact .confirmation_container .submit_container {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-left: 3rem;
 }
-.confirmation_container .submit_container .items_container {
+.contact .confirmation_container .submit_container .items_container {
   display: flex;
   height: 3rem;
   color: #1c1a13;
 }
-.confirmation_container .submit_container .items_container .confirm-item .confirmation-items {
+.contact .confirmation_container .submit_container .items_container .confirm-item .confirmation-items {
   padding-right: 7.5rem;
   font-family: "PP Neue Montreal", sans-serif;
   margin-left: 10%;
   font-size: 0.85rem;
 }
-.confirmation_container .submit_container .items_container .confirm-item svg {
+.contact .confirmation_container .submit_container .items_container .confirm-item svg {
   height: 20px;
   width: 20px;
   margin-right: 10%;
 }
-.confirmation_container .submit_container .items_container .confirm-name {
+.contact .confirmation_container .submit_container .items_container .confirm-name {
   background-color: #7a7a7a;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.confirmation_container .submit_container .items_container .confirm-email {
+.contact .confirmation_container .submit_container .items_container .confirm-email {
   background-color: rgba(217, 217, 217, 0.6784313725);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.confirmation_container .submit_container .items_container .confirm-message {
+.contact .confirmation_container .submit_container .items_container .confirm-message {
   background-color: #f1F1f1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.confirmation_container .submit_container .items_container .confirm-captcha {
+.contact .confirmation_container .submit_container .items_container .confirm-captcha {
   background-color: #0e0e0e;
   color: #f1F1f1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.confirmation_container .submit_container button {
+.contact .confirmation_container .submit_container button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -578,25 +578,25 @@
   height: 3rem;
   border: none;
 }
-.confirmation_container .submit_container button:hover {
+.contact .confirmation_container .submit_container button:hover {
   cursor: pointer;
 }
-.confirmation_container .submit_container button .invisible {
+.contact .confirmation_container .submit_container button .invisible {
   opacity: 0;
 }
-.confirmation_container .submit_container button .submit_text {
+.contact .confirmation_container .submit_container button .submit_text {
   font-family: "PP Neue Montreal", sans-serif;
   display: flex;
   align-items: center;
 }
-.confirmation_container .submit_container button .submit_text span {
+.contact .confirmation_container .submit_container button .submit_text span {
   display: flex;
   align-items: center;
   margin-right: 20px;
   color: #f1F1f1;
   font-size: 1.35rem;
 }
-.confirmation_container .submit_container button .submit_text svg {
+.contact .confirmation_container .submit_container button .submit_text svg {
   margin-left: 10px;
   width: 30px;
   height: 30px;
