@@ -516,12 +516,31 @@
 .contact .confirmation_container .captcha {
   padding-right: 2rem;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
 }
 .contact .confirmation_container .captcha label {
   font-family: "PP Neue Montreal", sans-serif;
 }
 .contact .confirmation_container .captcha label span {
   color: rgba(217, 217, 217, 0.6784313725);
+}
+.contact .confirmation_container .captcha input[type=checkbox] {
+  width: 50px;
+  height: 50px;
+  margin: auto 0 0 1.6rem;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  appearance: none;
+  transition: background-color 0.3s ease;
+}
+.contact .confirmation_container .captcha input[type=checkbox]:checked {
+  background-color: #4430cf;
+  border-color: #4430cf;
+}
+.contact .confirmation_container .captcha input[type=checkbox]:focus {
+  outline: none;
 }
 .contact .confirmation_container .submit_container {
   display: flex;
