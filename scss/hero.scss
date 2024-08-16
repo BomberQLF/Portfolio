@@ -3,6 +3,8 @@ $font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
 $font-color-beige: #D9D9D9AD;
 $font-color-blackish: #0e0e0e;
 $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
+$font-color-whiteish: #f1F1f1;
+
 
 @keyframes growShrink {
   0% {
@@ -68,7 +70,7 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
     a {
       text-transform: uppercase;
       text-decoration: none;
-      color: white;
+      color: $font-color-whiteish;
       border-bottom: 1px solid $font-color-beige;
       font-family: $font-family-ibm-plex-mono;
     }
