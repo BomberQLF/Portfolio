@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -192,7 +191,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 0 2rem; /* Ajout d'une marge sur les côtés */
+  padding: 0 2rem;
 }
 .project_section .title {
   display: flex;
@@ -438,11 +437,26 @@
   flex-direction: column;
   padding: 20px;
 }
-.contact form label {
+.contact form .input_container,
+.contact form .message_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.contact form .input_container label,
+.contact form .message_container label {
   font-family: "PP Neue Montreal", sans-serif;
   color: #f1F1f1;
+  display: flex;
+  justify-content: space-between;
 }
-.contact form input, .contact form textarea {
+.contact form .input_container label span,
+.contact form .message_container label span {
+  opacity: 0.6;
+}
+.contact form .input_container input, .contact form .input_container textarea,
+.contact form .message_container input,
+.contact form .message_container textarea {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.2);
@@ -453,14 +467,19 @@
   border-radius: 4px;
   transition: all 0.3s ease;
   font-family: "IBM Plex Mono", monospace;
+  resize: none;
 }
-.contact form input:focus, .contact form textarea:focus {
+.contact form .input_container input:focus, .contact form .input_container textarea:focus,
+.contact form .message_container input:focus,
+.contact form .message_container textarea:focus {
   outline: none;
   border-color: rgba(255, 255, 255, 0.7);
   color: rgba(255, 255, 255, 0.9);
   opacity: 1;
 }
-.contact form input::placeholder, .contact form textarea::placeholder {
+.contact form .input_container input::placeholder, .contact form .input_container textarea::placeholder,
+.contact form .message_container input::placeholder,
+.contact form .message_container textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 .contact .name_input {
@@ -481,7 +500,7 @@
   display: grid;
   grid-template-rows: repeat(4, 0.8fr);
 }
-.contact .contact-container .div1 {
+.contact .contact-container .form_header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -490,10 +509,10 @@
   color: #1c1a13;
   background-color: rgb(134, 132, 132);
   font-size: 10rem;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
-.contact .contact-container .div2 {
+.contact .contact-container .svg_form_container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,7 +521,7 @@
   background-color: #0e0e0e;
   font-family: "PP Neue Montreal", sans-serif;
 }
-.contact .contact-container .div2 svg {
+.contact .contact-container .svg_form_container svg {
   width: 200px;
   height: 200px;
 }
@@ -518,6 +537,7 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  margin-left: 3rem;
 }
 .contact .confirmation_container .captcha label {
   font-family: "PP Neue Montreal", sans-serif;
@@ -556,7 +576,7 @@
 .contact .confirmation_container .submit_container .items_container .confirm-item .confirmation-items {
   padding-right: 7.5rem;
   font-family: "PP Neue Montreal", sans-serif;
-  margin-left: 10%;
+  margin-left: 20%;
   font-size: 0.85rem;
 }
 .contact .confirmation_container .submit_container .items_container .confirm-item svg {
@@ -619,6 +639,85 @@
   margin-left: 10px;
   width: 30px;
   height: 30px;
+}
+
+footer {
+  padding-top: 3rem;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+footer .copyright_container {
+  margin-bottom: 3rem;
+}
+footer .copyright_container h4 {
+  color: rgba(217, 217, 217, 0.6784313725);
+  font-size: 8rem;
+  margin: 0;
+  font-family: "PP Neue Montreal", sans-serif;
+  text-align: center;
+}
+footer .lower_part_container {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  align-items: stretch;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 2rem;
+}
+footer ul li {
+  flex-grow: 1;
+  padding: 0 30px;
+  background-color: #f1F1f1;
+  position: relative;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #0e0e0e;
+  font-family: "PP Neue Montreal", sans-serif;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+footer ul .linkedin {
+  background-color: #4430cf;
+}
+footer ul .linkedin a {
+  color: rgba(217, 217, 217, 0.6784313725);
+}
+footer ul .github {
+  background-color: rgba(217, 217, 217, 0.6784313725);
+}
+footer ul .frontend_mentor {
+  background-color: #b5b5b5;
+}
+footer ul .mail {
+  background-color: #f1F1f1;
+}
+footer .footer_like {
+  width: auto;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_like svg {
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  border: gray 1px solid;
+  box-sizing: border-box;
 }
 
 body {

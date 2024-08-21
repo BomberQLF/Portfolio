@@ -1,0 +1,96 @@
+$font-family-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
+$font-color-beige: #D9D9D9AD;
+$font-color-blackish: #0e0e0e;
+$font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
+$font-color-contact-black: #1C1A13FF;
+$font-color-bg-blue-form: #4430cf;
+$font-color-whiteish: #f1F1f1;
+
+footer {
+    padding-top: 3rem;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    .copyright_container {
+        margin-bottom: 3rem;  
+        h4 {
+            color: $font-color-beige;
+            font-size: 8rem;
+            margin: 0;
+            font-family: $font-family-pp-neue-montreal;
+            text-align: center;
+        }
+    }
+
+    .lower_part_container {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        max-width: 1200px;
+        align-items: stretch; 
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; 
+        font-size: 2rem; 
+
+        li {
+            flex-grow: 1; 
+            padding: 0 30px; 
+            background-color: $font-color-whiteish;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: $font-color-blackish;
+                font-family: $font-family-pp-neue-montreal;
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 30px;
+            }
+        }
+
+        .linkedin {
+            background-color: $font-color-bg-blue-form;
+
+            a {
+                color: $font-color-beige;
+            }
+        }
+        .github {
+            background-color: $font-color-beige;
+        }
+        .frontend_mentor {
+            background-color: #b5b5b5;
+        }
+        .mail {
+            background-color: $font-color-whiteish;
+        }
+    }
+
+    .footer_like {
+        width: auto;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            height: 100%; 
+            width: 100%;
+            max-height: 100%;
+            max-width: 100%;
+            border: gray 1px solid;
+            box-sizing: border-box;
+        }
+    }
+}

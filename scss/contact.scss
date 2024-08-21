@@ -17,33 +17,48 @@ $font-color-whiteish: #f1F1f1;
         display: flex;
         flex-direction: column;
         padding: 20px;
+
+        .input_container,
+        .message_container {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
     
-        label {
-            font-family: $font-family-pp-neue-montreal;
-            color: $font-color-whiteish;
-        }
-    
-        input, textarea {
-            background-color: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.2); 
-            color: rgba(255, 255, 255, 0.2); 
-            opacity: 0.7;
-            font-size: 1rem;
-            padding: 10px;
-            margin-top: 20px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            font-family: $font-family-ibm-plex-mono;
-        
-            &:focus {
-                outline: none;
-                border-color: rgba(255, 255, 255, 0.7);
-                color: rgba(255, 255, 255, 0.9);
-                opacity: 1; 
+            label {
+                font-family: $font-family-pp-neue-montreal;
+                color: $font-color-whiteish;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    opacity: .6;
+                }
             }
         
-            &::placeholder {
-                color: rgba(255, 255, 255, 0.5); 
+            input, textarea {
+                background-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.2); 
+                color: rgba(255, 255, 255, 0.2); 
+                opacity: 0.7;
+                font-size: 1rem;
+                padding: 10px;
+                margin-top: 20px;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+                font-family: $font-family-ibm-plex-mono;
+                resize: none;
+
+            
+                &:focus {
+                    outline: none;
+                    border-color: rgba(255, 255, 255, 0.7);
+                    color: rgba(255, 255, 255, 0.9);
+                    opacity: 1; 
+                }
+            
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.5); 
+                }
             }
         }
     }
@@ -69,7 +84,7 @@ $font-color-whiteish: #f1F1f1;
             display: grid;
             grid-template-rows: repeat(4, 0.8fr);  
 
-            .div1 { 
+            .form_header { 
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -78,11 +93,11 @@ $font-color-whiteish: #f1F1f1;
                 color: $font-color-contact-black;
                 background-color: rgb(134, 132, 132);
                 font-size: 10rem;
-                font-family: $font-family-pp-neue-montreal;
+                font-family: $font-family-helvetica-neue;
                 font-weight: 500;
             }
 
-            .div2 { 
+            .svg_form_container { 
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -110,6 +125,7 @@ $font-color-whiteish: #f1F1f1;
             font-size: 2rem;
             display: flex;
             align-items: center;
+            margin-left: 3rem;
     
             label {
                 font-family: $font-family-pp-neue-montreal;
@@ -154,7 +170,7 @@ $font-color-whiteish: #f1F1f1;
                     .confirmation-items {
                         padding-right: 7.5rem;
                         font-family: "PP Neue Montreal", sans-serif;
-                        margin-left: 10%;
+                        margin-left: 20%;
                         font-size: 0.85rem;
                     }
     
