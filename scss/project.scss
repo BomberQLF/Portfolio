@@ -6,6 +6,8 @@ $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
 $font-color-whiteish: #f1F1f1;
 
 
+// LANDING PAGE CSS
+
 .project_section {
     display: flex;
     flex-direction: column;
@@ -161,4 +163,18 @@ $font-color-whiteish: #f1F1f1;
         }
     }
 
+}
+
+// PROJECTS PAGE CSS
+
+nav {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    
+    svg {
+        height: 50px;
+        width: 50px;
+    }
 }

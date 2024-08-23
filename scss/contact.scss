@@ -98,18 +98,10 @@ $font-color-whiteish: #f1F1f1;
             }
 
             .svg_form_container { 
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 grid-area: 1 / 6 / 3 / 8; 
                 border: grey 1px solid;
-                background-color: #0e0e0e;
+                background-color: $font-color-whiteish;
                 font-family: $font-family-pp-neue-montreal;
-
-                svg {
-                    width: 200px;
-                    height: 200px;
-                }
             }
         }
 
@@ -151,6 +143,10 @@ $font-color-whiteish: #f1F1f1;
     
                 &:focus {
                     outline: none;
+                }
+
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }

@@ -326,6 +326,17 @@
   margin-left: 1rem;
 }
 
+nav {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+nav svg {
+  height: 50px;
+  width: 50px;
+}
+
 .about_me {
   height: 100vh;
   display: flex;
@@ -513,17 +524,10 @@
   font-weight: 500;
 }
 .contact .contact-container .svg_form_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   grid-area: 1/6/3/8;
   border: grey 1px solid;
-  background-color: #0e0e0e;
+  background-color: #f1F1f1;
   font-family: "PP Neue Montreal", sans-serif;
-}
-.contact .contact-container .svg_form_container svg {
-  width: 200px;
-  height: 200px;
 }
 .contact .confirmation_container {
   display: flex;
@@ -561,6 +565,9 @@
 }
 .contact .confirmation_container .captcha input[type=checkbox]:focus {
   outline: none;
+}
+.contact .confirmation_container .captcha input[type=checkbox]:hover {
+  cursor: pointer;
 }
 .contact .confirmation_container .submit_container {
   display: flex;
@@ -648,6 +655,11 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+footer .footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 footer .copyright_container {
   margin-bottom: 3rem;
 }
@@ -660,10 +672,8 @@ footer .copyright_container h4 {
 }
 footer .lower_part_container {
   display: flex;
-  margin: auto;
   width: 100%;
   max-width: 1200px;
-  align-items: stretch;
 }
 footer ul {
   list-style: none;
@@ -672,11 +682,11 @@ footer ul {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 footer ul li {
   flex-grow: 1;
-  padding: 0 30px;
+  padding: 0 10px;
   background-color: #f1F1f1;
   position: relative;
 }
@@ -710,6 +720,7 @@ footer .footer_like {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 footer .footer_like svg {
   height: 100%;
