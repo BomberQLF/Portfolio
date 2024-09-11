@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         highlightColor: 0x181818,
         midtoneColor: 0x181818,
         lowlightColor: 0x222222,
-        baseColor: 0x393838
+        baseColor: 0x393838,
+        speed: 3.0
       })
 });

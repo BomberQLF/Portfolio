@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/loading.js"></script>
     <title>My Projects</title>
 </head>
 <body>
     <!-- Loading Animation -->
-    <!-- <div class="loading_container">
+    <div class="loading_container">
         <svg fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -16,7 +18,7 @@
                 <path d="M13,2l9,13.6L13,22ZM11,2,2,15.6,11,22Z"></path>
             </g>
         </svg>
-    </div> -->
+    </div>
     
     <section class="projects">
         <nav>
@@ -35,5 +37,17 @@
         </nav>
     </section>
     
+    <section class="my_work">
+        <h1 class="my_work_title">
+            My work
+            <span>(8)</span> <!-- PLOP LE NOMBRE DE PROJETS AFFICHÉS EN PHP -->
+        </h1>
+        <ul class="my_work_filter">
+            <li class="work_filter_item active_filter_item">All</li>
+            <li class="work_filter_item">Projects</li>
+            <li class="work_filter_item">Functionnalities</li>
+            <li class="work_filter_item">Landing Page</li>
+        </ul>
+    </section>
 </body>
 </html>

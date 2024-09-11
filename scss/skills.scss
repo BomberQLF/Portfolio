@@ -42,7 +42,7 @@ $font-color-whiteish: #f1F1f1;
                 h3 {
                     font-size: 1.7rem;
                     font-family: $font-family-pp-neue-montreal;
-                    color: rgba(255, 255, 255, 0.732);
+                    color: $font-color-whiteish;
                     text-transform: uppercase;
                 }
                 span {

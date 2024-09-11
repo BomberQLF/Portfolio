@@ -51,7 +51,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   width: 100%;
   display: none;
   animation: fadeIn 5s forwards;
@@ -66,7 +66,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #f1F1f1;
-  border-bottom: 1px solid rgba(217, 217, 217, 0.6784313725);
+  border-bottom: 1px solid #f1F1f1;
   font-family: "IBM Plex Mono", monospace;
 }
 .hero_section #vanta-bg {
@@ -148,13 +148,13 @@
 }
 .hero_section .hero_bottom nav ul a {
   text-decoration: none;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   margin-right: 3rem;
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   position: relative;
   font-size: 0.8rem;
-  border-bottom: 1px solid rgba(217, 217, 217, 0.6784313725);
+  border-bottom: 1px solid #f1F1f1;
   padding-bottom: 1px;
 }
 .hero_section .hero_bottom .bottom_center {
@@ -174,8 +174,8 @@
 .hero_section .hero_bottom .bottom_text .first_part,
 .hero_section .hero_bottom .bottom_text .second_part,
 .hero_section .hero_bottom .bottom_text .third_part {
-  border-top: 1px solid rgba(217, 217, 217, 0.6784313725);
-  border-bottom: 1px solid rgba(217, 217, 217, 0.6784313725);
+  border-top: 1px solid #f1F1f1;
+  border-bottom: 1px solid #f1F1f1;
 }
 .hero_section .hero_bottom .bottom_text .first_part span,
 .hero_section .hero_bottom .bottom_text .second_part span,
@@ -201,7 +201,7 @@
   position: absolute;
   left: 310px;
   padding: 30px;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -211,14 +211,14 @@
 }
 .project_section .title h2 {
   text-transform: uppercase;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   font-size: 7rem;
   margin: 0;
   font-family: "PP Neue Montreal", sans-serif;
 }
 .project_section .title .title_after {
   padding: 30px;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
   align-self: flex-end;
@@ -236,7 +236,7 @@
   position: relative;
   top: -7.2rem;
   background-color: #0e0e0e;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 6rem;
   margin-top: 40px;
@@ -278,7 +278,7 @@
   gap: 3rem;
 }
 .displayed_projects .title_display {
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
   position: relative;
@@ -298,7 +298,7 @@
 }
 .displayed_projects .img_container span {
   font-family: "IBM Plex Mono", monospace;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
@@ -314,12 +314,12 @@
   margin-top: 3rem;
 }
 .displayed_projects .more_projects a {
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
   text-decoration: none;
   font-size: 1.5rem;
-  border-bottom: rgba(217, 217, 217, 0.6784313725) 1px solid;
+  border-bottom: #f1F1f1 1px solid;
   padding-bottom: 1px;
 }
 .displayed_projects .more_projects a svg {
@@ -332,9 +332,60 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav svg {
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f1F1f1;
+  font-family: "IBM Plex Mono", monospace;
+}
+nav a svg {
   height: 50px;
   width: 50px;
+}
+nav .contact_nav a {
+  border-bottom: 1px solid #f1F1f1;
+}
+
+.my_work {
+  margin-top: 2rem;
+  padding-left: 2.5rem;
+}
+.my_work .my_work_title {
+  color: #f1F1f1;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 6rem;
+  margin: 0;
+}
+.my_work .my_work_title span {
+  font-size: 1.3rem;
+  position: absolute;
+  left: 38%;
+  color: rgba(217, 217, 217, 0.6784313725);
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: none;
+}
+.my_work .my_work_filter {
+  margin-top: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+}
+.my_work .my_work_filter li {
+  color: rgba(217, 217, 217, 0.6784313725);
+  border: 1px solid rgba(217, 217, 217, 0.6784313725);
+  padding: 15px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.my_work .my_work_filter li:hover {
+  cursor: pointer;
+}
+
+.work_filter_item.active_filter_item {
+  color: #f1F1f1 !important;
+  border-color: #f1F1f1 !important;
 }
 
 .about_me {
@@ -350,13 +401,13 @@ nav svg {
   left: 5.5rem;
 }
 .about_me .small_title_about span {
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   text-transform: uppercase;
   font-family: "IBM Plex Mono", monospace;
 }
 .about_me .description_about p {
   line-height: 3.6rem;
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   font-size: 2.5rem;
   font-family: "PP Neue Montreal", sans-serif;
   opacity: 0.5;
@@ -403,7 +454,7 @@ nav svg {
 .skills_section .skills_container .lower_container .title h3 {
   font-size: 1.7rem;
   font-family: "PP Neue Montreal", sans-serif;
-  color: rgba(255, 255, 255, 0.732);
+  color: #f1F1f1;
   text-transform: uppercase;
 }
 .skills_section .skills_container .upper_container .title span,
@@ -609,7 +660,7 @@ nav svg {
   font-family: "PP Neue Montreal", sans-serif;
 }
 .contact .confirmation_container .captcha label span {
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
 }
 .contact .confirmation_container .captcha input[type=checkbox] {
   width: 50px;
@@ -680,7 +731,7 @@ nav svg {
 }
 .contact .confirmation_container .submit_container button {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: #4430cf;
   height: 3rem;
@@ -726,7 +777,7 @@ footer .copyright_container {
   margin-bottom: 3rem;
 }
 footer .copyright_container h4 {
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
   font-size: 8rem;
   margin: 0;
   font-family: "PP Neue Montreal", sans-serif;
@@ -765,7 +816,7 @@ footer ul .linkedin {
   background-color: #4430cf;
 }
 footer ul .linkedin a {
-  color: rgba(217, 217, 217, 0.6784313725);
+  color: #f1F1f1;
 }
 footer ul .github {
   background-color: rgba(217, 217, 217, 0.6784313725);

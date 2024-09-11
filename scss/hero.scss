@@ -56,7 +56,7 @@ $font-color-whiteish: #f1F1f1;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  color: $font-color-beige;
+  color: $font-color-whiteish;
   width: 100%;
   display: none; 
   animation: fadeIn 5s forwards;
@@ -71,7 +71,7 @@ $font-color-whiteish: #f1F1f1;
       text-transform: uppercase;
       text-decoration: none;
       color: $font-color-whiteish;
-      border-bottom: 1px solid $font-color-beige;
+      border-bottom: 1px solid $font-color-whiteish;
       font-family: $font-family-ibm-plex-mono;
     }
   }
@@ -164,13 +164,13 @@ $font-color-whiteish: #f1F1f1;
 
         a {
           text-decoration: none;
-          color: $font-color-beige;
+          color: $font-color-whiteish;
           margin-right: 3rem;
           font-family: $font-family-ibm-plex-mono;
           text-transform: uppercase;
           position: relative;
           font-size: 0.8rem;
-          border-bottom: 1px solid $font-color-beige;
+          border-bottom: 1px solid $font-color-whiteish;
           padding-bottom: 1px;
         }
       }
@@ -195,8 +195,8 @@ $font-color-whiteish: #f1F1f1;
       .first_part,
       .second_part,
       .third_part {
-        border-top: 1px solid $font-color-beige;
-        border-bottom: 1px solid $font-color-beige;
+        border-top: 1px solid $font-color-whiteish;
+        border-bottom: 1px solid $font-color-whiteish;
 
         span {
           text-transform: uppercase;

@@ -23,7 +23,7 @@ $font-color-whiteish: #f1F1f1;
             position: absolute;
             left: 310px;
             padding: 30px;
-            color: $font-color-beige;
+            color: $font-color-whiteish;
             text-transform: uppercase;
             font-family: $font-family-ibm-plex-mono;
 
@@ -35,7 +35,7 @@ $font-color-whiteish: #f1F1f1;
 
         h2 {
             text-transform: uppercase;
-            color: $font-color-beige;
+            color: $font-color-whiteish;
             font-size: 7rem;
             margin: 0;
             font-family: $font-family-pp-neue-montreal;
@@ -43,7 +43,7 @@ $font-color-whiteish: #f1F1f1;
 
         .title_after {
             padding: 30px;
-            color: $font-color-beige;
+            color: $font-color-whiteish;
             text-transform: uppercase;
             font-family: $font-family-ibm-plex-mono;
             align-self: flex-end;
@@ -63,7 +63,7 @@ $font-color-whiteish: #f1F1f1;
     position: relative;
     top: -7.2rem;
     background-color: $font-color-blackish;
-    color: $font-color-beige;
+    color: $font-color-whiteish;
     font-family: $font-family-pp-neue-montreal;
     font-size: 6rem;
     margin-top: 40px;
@@ -107,7 +107,7 @@ $font-color-whiteish: #f1F1f1;
     gap: 3rem; 
 
     .title_display {
-        color: $font-color-beige;
+        color: $font-color-whiteish;
         font-family: $font-family-ibm-plex-mono;
         text-transform: uppercase;
         position: relative;
@@ -129,7 +129,7 @@ $font-color-whiteish: #f1F1f1;
 
         span {
             font-family: $font-family-ibm-plex-mono;
-            color: $font-color-beige;
+            color: $font-color-whiteish;
             font-size: 1.1rem;
             text-transform: uppercase;
         }
@@ -149,12 +149,12 @@ $font-color-whiteish: #f1F1f1;
         margin-top: 3rem;
 
         a {
-            color: $font-color-beige;
+            color: $font-color-whiteish;
             text-transform: uppercase;
             font-family: $font-family-ibm-plex-mono;
             text-decoration: none;
             font-size: 1.5rem;
-            border-bottom: $font-color-beige 1px solid;
+            border-bottom: $font-color-whiteish 1px solid;
             padding-bottom: 1px;
 
             svg {
@@ -165,16 +165,76 @@ $font-color-whiteish: #f1F1f1;
 
 }
 
-// PROJECTS PAGE CSS
+// ALL PROJECTS PAGE CSS
 
 nav {
     display: flex;
     padding: 2rem;
     justify-content: space-between;
     align-items: center;
-    
-    svg {
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $font-color-whiteish;
+        font-family: $font-family-ibm-plex-mono;
+
+      svg {
         height: 50px;
         width: 50px;
+        }
     }
+
+    .contact_nav {
+        a {
+            border-bottom: 1px solid $font-color-whiteish;
+        }
+    }
+}
+
+.my_work {
+    margin-top: 2rem;
+    padding-left: 2.5rem;
+
+    .my_work_title {
+        color: $font-color-whiteish;
+        text-transform: uppercase;
+        font-family: $font-family-helvetica-neue;
+        font-weight: 400;
+        font-size: 6rem;
+        margin: 0;
+
+        span {
+            font-size: 1.3rem;
+            position: absolute;
+            left: 38%;
+            color: $font-color-beige;
+            font-family: $font-family-ibm-plex-mono;
+            text-transform: none;
+        }
+    }
+
+    .my_work_filter {
+        margin-top: 2rem;
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        padding: 0;
+
+        li {
+           color: $font-color-beige; 
+           border: 1px solid $font-color-beige;
+           padding: 15px;
+           font-family: $font-family-ibm-plex-mono;
+
+           &:hover {
+            cursor: pointer;
+           }
+        }
+    }
+}
+
+.work_filter_item.active_filter_item {
+    color: $font-color-whiteish !important;
+    border-color: $font-color-whiteish !important;
 }

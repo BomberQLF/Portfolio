@@ -198,7 +198,7 @@ $font-color-whiteish: #f1F1f1;
                 font-family: $font-family-pp-neue-montreal;
     
                 span {
-                    color: $font-color-beige;
+                    color: $font-color-whiteish;
                 }
             }
             input[type="checkbox"] {
@@ -280,7 +280,7 @@ $font-color-whiteish: #f1F1f1;
     
             button {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-end;
                 align-items: center;
                 background-color: $font-color-bg-blue-form;
                 height: 3rem;
