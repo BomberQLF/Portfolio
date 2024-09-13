@@ -242,6 +242,7 @@ nav {
 
 // MEDIA QUERY
 // 375px devices
+// Main screen
 
 @media (min-width: 375px) and (max-width: 450px) {
     #scrolling-work .scrolling-text-content span {
@@ -279,5 +280,59 @@ nav {
     .scrolling-text span {
         padding: 0 2rem;
         font-size: 3rem;
+    }
+}
+
+// MEDIA FOR DEVICES SUCH AS IPADS
+@media (min-width: 768px) and (max-width: 1024px) {
+    .displayed_projects .img_container {
+        display: block;
+    }
+
+    .displayed_projects .prestige_yacht_mockup,
+    .displayed_projects .other_mockup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .displayed_projects .img_container img {
+        max-width: calc(50vw - -15rem);
+    }
+}
+
+
+
+
+// Project page 
+// Project page 
+// Project page 
+// Project page 
+
+// MEDIA QUERY 375px to 450px
+// Project page 
+
+@media (min-width: 375px) and (max-width: 450px) {
+    nav .contact_nav a {
+        display: none;
+    }
+
+    #burgerIcon {
+        display: block;
+        top: 30px !important;
+        margin-right: .8rem;
+    }
+
+    .my_work .my_work_title {
+        font-size: 3.5rem;
+    }
+
+    .my_work .my_work_title span {
+        font-size: 1.1rem;
+        left: 20rem;
+    }
+
+    .my_work .my_work_filter {
+        font-size: .8rem;
+        flex-wrap: wrap;
     }
 }

@@ -121,3 +121,26 @@ $font-color-whiteish: #f1F1f1;
         font-size: 0.8rem;
     }
 }
+
+// MEDIA FOR DEVICES SUCH AS IPADS
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .skills-scroll {
+        top: 30rem;
+    }
+
+    .skills_section {
+        margin: 34rem 0 10rem 0;
+    }
+
+    .skills_section .skills_container .upper_container, .skills_section .skills_container .lower_container {
+        display: block;
+    }
+
+    .skills_section .skills_container {
+        padding-left: 18rem;
+    }
+
+    .skills_section .skills_container .upper_container .under_skills_container .left_side .under_skills, .skills_section .skills_container .upper_container .under_skills_container .right_side .under_skills, .skills_section .skills_container .lower_container .under_skills_container .left_side .under_skills, .skills_section .skills_container .lower_container .under_skills_container .right_side .under_skills {
+        padding-right: 15rem;
+    }
+}
