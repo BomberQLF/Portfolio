@@ -318,3 +318,66 @@ $font-color-whiteish: #f1F1f1;
     }
 }
 
+@media (min-width: 375px) and (max-width: 450px) {
+    .contact .contact-container .form_header {
+        font-size: 3rem;
+        padding: 7%;
+    }
+
+    .contact .contact-container .svg_form_container .svg_sub_container {
+        font-size: 1rem;
+    }
+
+    .contact .contact-container .svg_form_container .svg_sub_container .svg_top_container {
+        margin-bottom: 1rem;
+    }
+
+    .contact form .input_container label, 
+    .contact form .message_container label {
+        font-size: 1rem;
+    }
+
+    .contact form .input_container input, 
+    .contact form .input_container textarea, 
+    .contact form .message_container input, 
+    .contact form .message_container textarea {
+        font-size: 0.8rem;
+    }
+
+    .contact .confirmation_container .captcha label {
+        font-size: 1rem;
+    }
+
+    .contact .confirmation_container .captcha input[type=checkbox] {
+        width: 25px;
+        height: 25px;
+        margin: auto 0 0 1.1rem;
+    }
+
+    .contact .contact-container {
+        display: block;
+    }
+
+    .contact .confirmation_container {
+        display: block;
+        margin-top: 16rem;
+        padding: 0;
+        position: relative;
+        left: -11%;
+    }
+
+    .contact .confirmation_container .captcha {
+        margin-bottom: 1rem;
+    }
+
+    .submit_container .items_container {
+        display: none !important;
+    }
+}
+
+// MEDIA for devices such as IPADS
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact_nav {
+        display: none;
+    }
+}

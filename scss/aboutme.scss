@@ -36,3 +36,33 @@ $font-color-whiteish: #f1F1f1;
         }
     }
 }
+
+// MEDIA QUERY ACCUEIL
+// FORMAT MOBILE
+
+@media (min-width: 375px) and (max-width: 450px) {
+    .about_me .small_title_about {
+        position: relative;
+        bottom: 17rem;
+        left: 1.5rem;
+    }
+
+    .about_me .description_about p {
+        line-height: 2rem;
+        color: $font-color-whiteish;
+        font-family: "PP Neue Montreal", sans-serif;
+        opacity: 1;
+        margin-left: -1rem;
+        font-size: 1rem;
+    }
+}
+
+// MEDIA FOR DEVICES SUCH AS IPADS
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about_me .description_about p {
+        line-height: 3rem;
+        font-size: 1.5rem;
+        width: 39rem;
+        margin: 0;
+    }
+}

@@ -58,12 +58,12 @@ $font-color-whiteish: #f1F1f1;
 }
 
 .scrolling-text {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     position: relative;
     top: -7.2rem;
-    background-color: $font-color-blackish;
-    color: $font-color-whiteish;
+    background-color: $font-color-beige;
+    color: $font-color-blackish;
     font-family: $font-family-pp-neue-montreal;
     font-size: 6rem;
     margin-top: 40px;
@@ -237,4 +237,47 @@ nav {
 .work_filter_item.active_filter_item {
     color: $font-color-whiteish !important;
     border-color: $font-color-whiteish !important;
+}
+
+
+// MEDIA QUERY
+// 375px devices
+
+@media (min-width: 375px) and (max-width: 450px) {
+    #scrolling-work .scrolling-text-content span {
+        font-size: 3rem;
+    }
+
+    .displayed_projects .title_display {
+        display: flex;
+        justify-content: center;
+    }
+
+    .displayed_projects .img_container {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .img_container .prestige_yacht_mockup, 
+    .img_container .other_mockup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .displayed_projects .img_container img {
+        max-width: calc(50vw - -8rem);
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .displayed_projects {
+        padding: 0 2rem;
+        height: 100vh;
+    }
+
+    .scrolling-text span {
+        padding: 0 2rem;
+        font-size: 3rem;
+    }
 }

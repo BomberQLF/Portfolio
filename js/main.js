@@ -3,23 +3,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     filterItems.forEach(item => {
         item.addEventListener('click', () => {
-            // Permet retirer la classe active de tous les éléments
+            // Retirer la classe active de tous les éléments
             filterItems.forEach(i => i.classList.remove('active_filter_item'));
 
-            // Ajouter la classe active au click
+            // Ajouter la classe active à l'élément cliqué
             item.classList.add('active_filter_item');
         });
     });
 
     const description = document.querySelector('.description_about p');
     const text = description.textContent;
-    description.innerHTML = ''; // Clear the current text
+    description.innerHTML = ''; // Vider le texte actuel
 
-    // Wrap each letter in a span
+    // Envelopper chaque lettre dans un span
     text.split('').forEach(letter => {
         const span = document.createElement('span');
         span.textContent = letter;
-        span.style.opacity = '0'; // Initially hidden
+        span.style.opacity = '0'; // Initialement masqué
         description.appendChild(span);
     });
 });
@@ -31,28 +31,29 @@ document.addEventListener('scroll', () => {
     const sectionHeight = aboutSection.getBoundingClientRect().height;
     const screenHeight = window.innerHeight;
 
-    // Adjust the scroll trigger sensitivity
-    const triggerPoint = screenHeight * 0.8; // Adjust this for fine-tuning when highlighting starts
-    const scrollPosition = triggerPoint - sectionTop;
+    // Ajuster la sensibilité du déclenchement (scroll légèrement plus profond dans la section)
+    const triggerPoint = screenHeight * 0.65; // Commencer un peu plus tôt que la moitié du viewport
 
-    // Determine if the section is fully out of view
+    // Ajustement pour déclencher l'animation de manière plus précise
+    const scrollPosition = (triggerPoint - sectionTop) / 1.2; // Légèrement moins de sensibilité pour terminer plus vite
+
+    // Vérifier si la section est complètement hors vue
     const isSectionOutOfView = sectionTop + sectionHeight < 0;
 
     spans.forEach((span, index) => {
         const letterPosition = (index / spans.length) * sectionHeight;
 
         if (scrollPosition > letterPosition && !isSectionOutOfView) {
-            // If section is in view or partially in view, highlight letters
+            // Si la section est visible ou partiellement visible, animer les lettres
             span.style.opacity = '1';
-            span.style.transition = `opacity 0.35s ease-out`; // Slow transition for highlighting
+            span.style.transition = `opacity 0.3s ease-out`; // Transition légèrement plus rapide
         } else if (isSectionOutOfView) {
-            // If section is fully out of view, keep opacity at 1
+            // Si la section est complètement hors de vue, garder l'opacité à 1
             span.style.opacity = '1';
         } else {
-            // If section is partially out of view or scrolling back up
-            span.style.opacity = '0.2'; // Slightly visible when scrolling up
-            span.style.transition = `opacity 0.15s ease-out`; // Faster reset when scrolling back up
+            // Si on remonte
+            span.style.opacity = '0.2'; // Légèrement visible en remontant
+            span.style.transition = `opacity 0.1s ease-out`; // Transition rapide pour revenir en arrière
         }
     });
-    
 });

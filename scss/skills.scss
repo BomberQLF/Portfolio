@@ -77,3 +77,47 @@ $font-color-whiteish: #f1F1f1;
         }
     }
 }
+
+@media (min-width: 375px) and (max-width: 450px) {
+    .skills_section {
+        height: 100vh;
+        margin: 25rem 0 15rem 0;
+    }
+
+    .skills_section .skills_container .upper_container, 
+    .skills_section .skills_container .lower_container {
+        display: block; 
+        margin-left: 24%;
+    }
+
+    .skills_section .skills_container .upper_container .under_skills_container, 
+    .skills_section .skills_container .lower_container .under_skills_container {
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+
+    .skills_section .skills_container .upper_container .upper_skills, 
+    .skills_section .skills_container .upper_container .lower_skills, 
+    .skills_section .skills_container .lower_container .upper_skills, 
+    .skills_section .skills_container .lower_container .lower_skills {
+        margin-top: 1rem;
+    }
+
+    .skills_section .skills_container .upper_container .title h3, 
+    .skills_section .skills_container .lower_container .title h3 {
+        font-size: 1.2rem;
+    }
+
+    .skills_section .skills_container .upper_container .title span, 
+    .skills_section .skills_container .lower_container .title span {
+        font-size: 0.8rem;
+    }
+
+    .skills_section .skills_container .upper_container .under_skills_container .left_side .under_skills, 
+    .skills_section .skills_container .upper_container .under_skills_container .right_side .under_skills, 
+    .skills_section .skills_container .lower_container .under_skills_container .left_side .under_skills, 
+    .skills_section .skills_container .lower_container .under_skills_container .right_side .under_skills {
+        font-size: 0.8rem;
+    }
+}

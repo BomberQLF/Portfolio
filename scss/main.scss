@@ -17,6 +17,12 @@ $font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
 $font-color-beige: #ede8e4;
 $font-color-blackish: #0e0e0e;
 $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
+$font-color-bg-blue-form: #4430cf;
+$background-nav: #080808;
+
+::selection {
+  background-color: $font-color-bg-blue-form;
+}
 
 
 body {
@@ -26,4 +32,76 @@ body {
       main {
         display: none;
       }
+}
+
+#burgerIcon {
+  display: none;
+}
+
+#nav-bar {
+  position: fixed; /* Change 'absolute' to 'fixed' */
+  bottom: 1rem; /* Ajuste la distance par rapport au bas */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8000; /* Ajoute un z-index pour s'assurer qu'elle reste au-dessus du contenu */
+
+  #nav-ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2rem;
+    margin: 0;
+    border-radius: 26px;
+    background-color: rgb(41, 40, 40);
+    position: relative;
+
+    a {
+      text-transform: none;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+
+      li {
+        list-style: none;
+        text-align: center;
+        color: #fff;
+        width: 60px;
+      }
+    }
+  }
+}
+
+.navIcon {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  #nav-bar {
+    display: none;
+  }
+
+  #burgerIcon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin-right: .6rem;
+  }
+}
+
+// MEDIA for devices such as IPADS
+@media (min-width: 768px) and (max-width: 1024px) {
+  #burgerIcon {
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin-right: .6rem;
+  }
 }
