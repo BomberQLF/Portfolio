@@ -336,3 +336,118 @@ nav {
         flex-wrap: wrap;
     }
 }
+
+
+// Normal COMPUTER screens
+
+.case_list {
+    margin-top: 3rem;
+
+    .case {
+        display: flex;
+        align-items: center;
+        height: 500px;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            .case_button {
+                display: block;
+                transform: scale(1);
+                transition: .6s ease-out;
+            }
+        }
+
+        .case_text {
+            padding: 2rem;
+            border-right: 1px solid rgba(255, 255, 255, .2);
+            width: 470px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 100%;
+
+            .case_text_description {
+                .case_title {
+                    color: $font-color-whiteish;
+                    text-transform: uppercase;
+                    margin: 0 0 20px 0;
+                    font-family: $font-family-helvetica-neue;
+                }
+
+                .case_description {
+                    color: $font-color-whiteish;
+                    font-family: $font-family-helvetica-neue;
+                    max-width: 330px;
+                    font-weight: 300;
+                    font-size: 1rem;
+                }
+            }
+
+            .case_button {
+                margin-bottom: .8rem;
+                display: none;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #f1f1f1;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    padding: 42px 35px;
+                    text-align: center;
+                    max-width: 120px;
+                    font-size: 0.8rem;
+                    font-family: "IBM Plex Mono", monospace;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $font-color-blackish;
+                        background-color: $font-color-whiteish;
+                        transition: 1s;
+                    }
+                }
+            }
+
+            .case_tags {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .tag {
+                    color: rgba(217, 217, 217, 0.6784313725);
+                    border: 1px solid rgba(217, 217, 217, 0.6784313725);
+                    padding: 10px;
+                    font-family: $font-family-ibm-plex-mono;
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            margin: 0 0 0 20px;
+            padding: 20px 0;
+            position: relative;
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+            .swiper_container {
+                display: flex; 
+                width: auto;
+                height: 100%;
+            }
+
+            .swiper_image {                
+                img {
+                    width: 670px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
