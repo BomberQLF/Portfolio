@@ -184,12 +184,6 @@ nav {
         width: 50px;
         }
     }
-
-    .contact_nav {
-        a {
-            border-bottom: 1px solid $font-color-whiteish;
-        }
-    }
 }
 
 .my_work {
@@ -335,6 +329,30 @@ nav {
         font-size: .8rem;
         flex-wrap: wrap;
     }
+
+    .case_list .case .swiper .swiper_image img {
+        width: 250px !important;
+    }
+
+    .case_list .case .case_text .case_button {
+        display: none !important;
+    }
+
+    .case_list .case {
+        flex-direction: column-reverse;
+        height: 800px !important;
+    }
+
+    .case_list .case .case_text {
+        width: 380px !important;
+        border-right: none !important;
+        display: block !important;
+    }
+
+    .swiper_image {
+        height: 240px;
+        margin-bottom: 10%;
+    }
 }
 
 
@@ -351,14 +369,6 @@ nav {
         border-bottom: 1px solid rgba(255, 255, 255, .2);
         position: relative;
         overflow: hidden;
-
-        &:hover {
-            .case_button {
-                display: block;
-                transform: scale(1);
-                transition: .6s ease-out;
-            }
-        }
 
         .case_text {
             padding: 2rem;
@@ -389,7 +399,9 @@ nav {
 
             .case_button {
                 margin-bottom: .8rem;
-                display: none;
+                display: block;
+                transform: scale(0);
+                transition: transform 0.5s ease-out;
 
                 a {
                     display: block;
@@ -447,6 +459,12 @@ nav {
                     width: 670px;
                     margin-right: 15px;
                 }
+            }
+        }
+
+        &:hover {
+            .case_button {
+                transform: scale(1);
             }
         }
     }

@@ -67,12 +67,17 @@ $font-color-whiteish: #f1F1f1;
     right: 0;
     z-index: 2;
 
-    a {
+    span {
       text-transform: uppercase;
       text-decoration: none;
       color: $font-color-whiteish;
       border-bottom: 1px solid $font-color-whiteish;
       font-family: $font-family-ibm-plex-mono;
+      font-size: 1.3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
