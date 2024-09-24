@@ -40,10 +40,9 @@ $font-color-whiteish: #f1F1f1;
             input, textarea {
                 background-color: transparent;
                 border: 1px dotted rgba(255, 255, 255, 0.2); 
-                color: rgba(255, 255, 255, 0.2); 
+                color: rgb(255, 255, 255); 
                 opacity: 0.7;
                 font-size: 1rem;
-                // padding: 10px; // TEMPORAIRE
                 margin-top: 20px;
                 border-radius: 4px;
                 transition: all 0.3s ease;
@@ -54,13 +53,13 @@ $font-color-whiteish: #f1F1f1;
             
                 &:focus {
                     outline: none;
-                    border-color: rgba(255, 255, 255, 0.7);
+                    border-color: rgb(255, 255, 255);
                     color: rgba(255, 255, 255, 0.9);
                     opacity: 1; 
                 }
             
                 &::placeholder {
-                    color: rgba(255, 255, 255, 0.5); 
+                    color: rgb(255, 255, 255); 
                 }
             }
         }
@@ -106,6 +105,7 @@ $font-color-whiteish: #f1F1f1;
                 border: grey 1px solid;
                 background-color: $font-color-whiteish;
                 font-family: $font-family-pp-neue-montreal;
+                justify-content: space-around;
 
                 .svg_sub_container {
                     display: flex;

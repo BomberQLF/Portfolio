@@ -57,40 +57,4 @@ document.addEventListener('scroll', () => {
         }
     });
 
-
-    // CODE POUR LE CURSEUR
-
-    var cursor = document.querySelector(".cursor");
-var follower = document.querySelector(".cursor-follower");
-
-var posX = 0,
-    posY = 0,
-    mouseX = 0,
-    mouseY = 0;
-
-// Suivi de la souris
-document.addEventListener("mousemove", function(e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
-    follower.style.left = (mouseX - 20) + "px";
-    follower.style.top = (mouseY - 20) + "px";
-});
-
-// Activer le curseur personnalisé sur hover
-var projectItems = document.querySelectorAll(".prestige_yacht_mockup img, .other_mockup img");
-
-projectItems.forEach(function(item) {
-    item.addEventListener("mouseenter", function() {
-        cursor.classList.add("activate");
-        follower.classList.add("activate");
-    });
-
-    item.addEventListener("mouseleave", function() {
-        cursor.classList.remove("activate");
-        follower.classList.remove("activate");
-    });
-});
-
 });

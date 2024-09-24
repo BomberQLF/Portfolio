@@ -71,6 +71,8 @@ $font-color-whiteish: #f1F1f1;
                         padding-bottom: 12px;
                         padding-right: 10rem;
                         border-bottom: 1px solid rgb(81, 80, 80);
+                        width: 280px;
+                        white-space: nowrap;
                     }
                 }
             }
@@ -87,7 +89,7 @@ $font-color-whiteish: #f1F1f1;
     .skills_section .skills_container .upper_container, 
     .skills_section .skills_container .lower_container {
         display: block; 
-        margin-left: 24%;
+        margin-left: 26%;
     }
 
     .skills_section .skills_container .upper_container .under_skills_container, 
@@ -119,6 +121,7 @@ $font-color-whiteish: #f1F1f1;
     .skills_section .skills_container .lower_container .under_skills_container .left_side .under_skills, 
     .skills_section .skills_container .lower_container .under_skills_container .right_side .under_skills {
         font-size: 0.8rem;
+        width: auto;
     }
 }
 
@@ -134,6 +137,7 @@ $font-color-whiteish: #f1F1f1;
 
     .skills_section .skills_container .upper_container, .skills_section .skills_container .lower_container {
         display: block;
+        margin-left: 12rem;
     }
 
     .skills_section .skills_container {
@@ -141,6 +145,7 @@ $font-color-whiteish: #f1F1f1;
     }
 
     .skills_section .skills_container .upper_container .under_skills_container .left_side .under_skills, .skills_section .skills_container .upper_container .under_skills_container .right_side .under_skills, .skills_section .skills_container .lower_container .under_skills_container .left_side .under_skills, .skills_section .skills_container .lower_container .under_skills_container .right_side .under_skills {
-        padding-right: 15rem;
+        padding-right: 21rem;
+        width: auto;
     }
 }

@@ -100,23 +100,8 @@ $font-color-whiteish: #f1F1f1;
 }
 
   .hero {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
     padding: 11%;
     width: 100%;
-
-    .year_of_birth,
-    .date_of_birth,
-    .hobby,
-    .sport,
-    .year {
-      min-width: max-content;
-      font-family: $font-family-pp-neue-montreal;
-      font-weight: 100;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-    }
 
     .hero_center {
       display: flex;
@@ -154,7 +139,7 @@ $font-color-whiteish: #f1F1f1;
     align-items: center;
     margin-top: 30px;
 
-    nav {
+    #left_nav {
       display: flex;
       align-items: center;
       padding-left: 7%;
@@ -162,10 +147,6 @@ $font-color-whiteish: #f1F1f1;
       ul {
         list-style: none;
         display: flex;
-
-        li {
-          margin: 5%;
-        }
 
         a {
           text-decoration: none;
@@ -185,7 +166,7 @@ $font-color-whiteish: #f1F1f1;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-right: 9rem;
+      padding-left: 4.5rem;
 
       h2 {
         font-family: $font-family-ibm-plex-mono;
@@ -194,24 +175,31 @@ $font-color-whiteish: #f1F1f1;
       }
     }
 
-    .bottom_text {
-      width: 15%;
+      #right_nav {
+        display: flex;
+        align-items: center;
+        padding-right: 7%;
 
-      .first_part,
-      .second_part,
-      .third_part {
-        border-top: 1px solid $font-color-whiteish;
-        border-bottom: 1px solid $font-color-whiteish;
+        ul {
+          list-style: none;
+          display: flex;
 
-        span {
-          text-transform: uppercase;
-          font-size: 2rem;
-          font-family: $font-family-pp-neue-montreal;
+            a {
+              text-decoration: none;
+              color: #f1F1f1;
+              margin-right: 3rem;
+              font-family: "IBM Plex Mono", monospace;
+              text-transform: uppercase;
+              position: relative;
+              font-size: 0.8rem;
+              border-bottom: 1px solid #f1F1f1;
+              padding-bottom: 1px;
+            }
+          }
         }
       }
+
     }
-  }
-}
 
 @media (min-width: 375px) and (max-width: 450px) {
   // Responsive for HERO SECTION
@@ -281,21 +269,6 @@ $font-color-whiteish: #f1F1f1;
     font-size: 3.8rem;
 }
 
-.date_of_birth,
-.hobby {
-  display: none;
-}
-
-.year_of_birth {
-  position: relative;
-  left: -20px;
-}
-
-.year {
-  position: relative;
-  right: -20px;
-}
-
 .hero_section .hero {
   padding: 20% 11% 11% 11%;
 }
@@ -304,9 +277,16 @@ $font-color-whiteish: #f1F1f1;
   margin-top: 8rem;
 }
 
-.hero_section .hero_bottom .bottom_text {
-  width: 20%;
+.hero_section .hero_bottom .bottom_center {
+  padding-right: 0;
+}
+
+.hero_section .hero_bottom .bottom_center h2 {
+  width: 6rem;
+}
+
+#right_nav .frontendmentor {
+  width: 11rem;
 }
 
 }
-

@@ -358,6 +358,28 @@ nav {
 
 // Normal COMPUTER screens
 
+nav {
+    .contact_nav {
+        padding: 28px 40px 0 0;
+        position: fixed;
+        right: 0;
+        z-index: 2;
+
+        span {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $font-color-whiteish;
+            border-bottom: 1px solid $font-color-whiteish;
+            font-family: $font-family-ibm-plex-mono;
+            font-size: 1.3rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 .case_list {
     margin-top: 3rem;
 
