@@ -7,3 +7,135 @@ $font-color-contact-black: #1C1A13FF;
 $font-color-bg-blue-form: #4430cf;
 $font-color-whiteish: #f1F1f1;
 
+footer {
+    height: 100vh;
+    padding-top: 8rem;
+    width: 88%;
+    margin: auto;
+
+    .footer_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 150px;
+        width: 88%;
+
+        .top_footer {
+            display: flex;
+            gap: 12rem;
+            flex-wrap: wrap;
+
+            .text_footer_container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+
+                .top_text_footer {
+                    width: 100%;
+                    color: $font-color-whiteish;
+                    font-size: 6.5rem;
+                    text-transform: uppercase;
+                    font-family: $font-family-helvetica-neue;
+                    font-weight: 500;
+                }
+
+                .bottom_text_footer {
+                    width: 100%;
+                    color: $font-color-whiteish;
+                    font-size: 6.5rem;
+                    text-transform: uppercase;
+                    text-align: right;
+                    margin-left: 4rem;
+                    font-family: $font-family-helvetica-neue;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .bottom_footer {
+            display: flex;
+            gap: 170px; 
+            justify-content: space-between; 
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-left: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+            padding-bottom: 50px;
+
+            .left_side_footer {
+                display: flex; 
+                flex-direction: column;
+                color: $font-color-beige; 
+
+
+                .link_name {
+                    display: flex;
+                    justify-content: space-between; 
+                    margin-bottom: 10px; 
+                    font-family: $font-family-ibm-plex-mono;
+                    border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+                    .big_width {
+                        width: 16rem;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $font-color-beige;
+
+                        .link_username {
+                            display: flex;
+                            align-items: center; 
+                            font-family: $font-family-ibm-plex-mono;
+                            gap: 95px;
+
+                            p {
+                                width: 7rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right_side_footer {
+                display: flex; 
+                flex-direction: column;
+                color: $font-color-beige; 
+
+                    .link_name {
+                        display: flex;
+                        justify-content: space-between; 
+                        margin-bottom: 10px; 
+                        font-family: $font-family-ibm-plex-mono;
+                        border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+                        .big_width {
+                            width: 16rem;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $font-color-beige;
+                        }
+
+                            .link_username {
+                                display: flex;
+                                align-items: center; 
+                                font-family: $font-family-ibm-plex-mono;
+                                gap: 95px;
+
+                                p {
+                                    width: 7rem;
+                                }
+                            }
+                }
+
+                span {
+                    font-family: $font-family-ibm-plex-mono;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
