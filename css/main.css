@@ -332,7 +332,7 @@
 }
 .displayed_projects {
   height: 70vh;
-  padding: 0 2rem;
+  padding: 0 2rem 0 1.6rem;
   gap: 3rem;
 }
 .displayed_projects .title_display {
@@ -347,10 +347,9 @@
 }
 .displayed_projects .img_container {
   display: flex;
-  gap: 3rem;
 }
 .displayed_projects .img_container img {
-  max-width: calc(50vw - 3rem);
+  max-width: calc(50vw - 4rem);
   height: auto;
   padding-bottom: 1rem;
 }
@@ -365,7 +364,7 @@
   font-size: 1.8rem;
   text-transform: uppercase;
   font-family: "PP Neue Montreal", sans-serif;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 .displayed_projects .more_projects {
   display: flex;
@@ -382,6 +381,17 @@
 }
 .displayed_projects .more_projects a svg {
   margin-left: 1rem;
+}
+
+.prestige_yacht_mockup,
+.other_mockup {
+  width: min-content;
+  padding: 20px 20px 0 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.other_mockup {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 nav {
@@ -467,7 +477,7 @@ nav a svg {
     padding-bottom: 1rem;
   }
   .displayed_projects {
-    padding: 0 2rem;
+    padding: 0 1.2rem 0 0;
     height: 100vh;
   }
   .scrolling-text span {
@@ -634,6 +644,7 @@ nav .contact_nav span:hover {
 .case_list .case .swiper .swiper_image img {
   width: 670px;
   margin-right: 15px;
+  height: 446px;
 }
 .case_list .case:hover .case_button {
   transform: scale(1);
@@ -659,7 +670,7 @@ nav .contact_nav span:hover {
 .about_me .description_about p {
   line-height: 4rem;
   color: #f1F1f1;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: "PP Neue Montreal", sans-serif;
   opacity: 0.5;
   margin-left: 3rem;
@@ -1206,6 +1217,13 @@ footer .footer_container .top_footer .text_footer_container .bottom_text_footer 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
+footer .footer_container .top_footer .text_footer_container .bottom_text_footer img {
+  height: 130px;
+  width: 130px;
+  transform: rotate(320deg);
+  position: relative;
+  top: 28px;
+}
 footer .footer_container .bottom_footer {
   display: flex;
   gap: 170px;
@@ -1228,6 +1246,11 @@ footer .footer_container .bottom_footer .left_side_footer .link_name {
   font-family: "IBM Plex Mono", monospace;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+footer .footer_container .bottom_footer .left_side_footer .link_name:hover {
+  color: white;
+  transition: 0.5s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.387);
+}
 footer .footer_container .bottom_footer .left_side_footer .link_name .big_width {
   width: 16rem;
 }
@@ -1240,6 +1263,10 @@ footer .footer_container .bottom_footer .left_side_footer .link_name a .link_use
   align-items: center;
   font-family: "IBM Plex Mono", monospace;
   gap: 95px;
+}
+footer .footer_container .bottom_footer .left_side_footer .link_name a .link_username:hover {
+  color: white;
+  transition: 0.5s;
 }
 footer .footer_container .bottom_footer .left_side_footer .link_name a .link_username p {
   width: 7rem;
@@ -1256,6 +1283,11 @@ footer .footer_container .bottom_footer .right_side_footer .link_name {
   font-family: "IBM Plex Mono", monospace;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+footer .footer_container .bottom_footer .right_side_footer .link_name:hover {
+  color: white;
+  transition: 0.5s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.387);
+}
 footer .footer_container .bottom_footer .right_side_footer .link_name .big_width {
   width: 16rem;
 }
@@ -1268,6 +1300,10 @@ footer .footer_container .bottom_footer .right_side_footer .link_name .link_user
   align-items: center;
   font-family: "IBM Plex Mono", monospace;
   gap: 95px;
+}
+footer .footer_container .bottom_footer .right_side_footer .link_name .link_username:hover {
+  color: white;
+  transition: 0.5s;
 }
 footer .footer_container .bottom_footer .right_side_footer .link_name .link_username p {
   width: 7rem;

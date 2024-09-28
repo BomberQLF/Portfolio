@@ -103,7 +103,7 @@ $font-color-whiteish: #f1F1f1;
 
 .displayed_projects {
     height: 70vh;
-    padding: 0 2rem; 
+    padding: 0 2rem 0 1.6rem; 
     gap: 3rem; 
 
     .title_display {
@@ -119,10 +119,9 @@ $font-color-whiteish: #f1F1f1;
 
     .img_container {
         display: flex;
-        gap: 3rem; 
 
         img {
-            max-width: calc(50vw - 3rem); 
+            max-width: calc(50vw - 4rem); 
             height: auto;
             padding-bottom: 1rem;
         }
@@ -139,7 +138,7 @@ $font-color-whiteish: #f1F1f1;
             font-size: 1.8rem;
             text-transform: uppercase;
             font-family: "PP Neue Montreal", sans-serif;
-            margin-top: 5px;
+            margin-top: 6px;
         }
        }
 
@@ -166,6 +165,17 @@ $font-color-whiteish: #f1F1f1;
 }
 
 // ALL PROJECTS PAGE CSS
+
+.prestige_yacht_mockup,
+.other_mockup {
+    width: min-content;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.other_mockup {
+    border-left: 1px solid rgba(255, 255, 255, .2);
+}
 
 nav {
     display: flex;
@@ -267,7 +277,7 @@ nav {
     }
 
     .displayed_projects {
-        padding: 0 2rem;
+        padding: 0 1.2rem 0 0;
         height: 100vh;
     }
 
@@ -480,6 +490,7 @@ nav {
                 img {
                     width: 670px;
                     margin-right: 15px;
+                    height: 446px;
                 }
             }
         }

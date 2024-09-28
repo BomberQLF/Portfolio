@@ -49,6 +49,14 @@ footer {
                     margin-left: 4rem;
                     font-family: $font-family-helvetica-neue;
                     font-weight: 500;
+
+                    img {
+                        height: 130px;
+                        width: 130px;
+                        transform: rotate(320deg);
+                        position: relative;
+                        top: 28px;
+                    }
                 }
             }
         }
@@ -76,6 +84,12 @@ footer {
                     font-family: $font-family-ibm-plex-mono;
                     border-bottom: 1px solid rgba(255, 255, 255, .2);
 
+                    &:hover {
+                        color: white;
+                        transition: .5s;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.387);
+                    }
+
                     .big_width {
                         width: 16rem;
                     }
@@ -89,6 +103,11 @@ footer {
                             align-items: center; 
                             font-family: $font-family-ibm-plex-mono;
                             gap: 95px;
+
+                            &:hover {
+                                color: white;
+                                transition: .5s;
+                            }
 
                             p {
                                 width: 7rem;
@@ -110,6 +129,12 @@ footer {
                         font-family: $font-family-ibm-plex-mono;
                         border-bottom: 1px solid rgba(255, 255, 255, .2);
 
+                        &:hover {
+                            color: white;
+                            transition: .5s;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.387);
+                        }
+
                         .big_width {
                             width: 16rem;
                         }
@@ -124,6 +149,11 @@ footer {
                                 align-items: center; 
                                 font-family: $font-family-ibm-plex-mono;
                                 gap: 95px;
+
+                                &:hover {
+                                    color: white;
+                                    transition: .5s;
+                                }
 
                                 p {
                                     width: 7rem;
