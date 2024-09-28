@@ -66,3 +66,118 @@ $font-color-whiteish: #f1F1f1;
         margin: 0;
     }
 }
+
+
+// ABOUT ME PAGE
+
+nav {
+    .contact_nav {
+        padding: 28px 40px 0 0;
+        position: fixed;
+        right: 0;
+        z-index: 2;
+
+        span {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $font-color-whiteish;
+            border-bottom: 1px solid $font-color-whiteish;
+            font-family: $font-family-ibm-plex-mono;
+            font-size: 1.3rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.introduction {
+    height: 70vh;
+    margin-top: 6%;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+
+    .about_container {
+        padding: 0 4%;
+        width: fit-content;
+        height: 87.5%;
+        margin-top: 5rem;
+        
+        .about_title {
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-family: $font-family-helvetica-neue;
+
+            h1 {
+                color: $font-color-whiteish;
+                margin-top: 0;
+
+                span {
+                    font-size: 1.3rem;
+                    position: absolute;
+                    color: rgba(217, 217, 217, 0.6784313725);
+                    font-family: "IBM Plex Mono", monospace;
+                    text-transform: none;
+
+                    &:hover {
+                        cursor: help;
+                    }
+                }
+            }
+        }
+        
+        .description_intro_container {
+            margin-top: 10rem;
+            .tags_intro {
+                margin-top: 1rem;
+        
+                span {
+                    color: $font-color-whiteish;
+                    font-size: 1.3rem;
+                    font-family: $font-family-helvetica-neue;
+                    opacity: .8;
+                    padding: 1rem;
+        
+                    &:nth-child(1) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        
+            .about_description {
+                margin-top: 1rem; 
+                width: 35rem;
+        
+                p {
+                    font-size: 1.3rem;
+                    color: $font-color-whiteish;
+                    opacity: .7;
+                    font-family: $font-family-helvetica-neue;
+                    margin-top: 3rem;
+        
+                    .highlight { 
+                        font-weight: bold;
+                        color: #4169E1;
+                    }
+                }
+            }
+        }
+
+            .tags_intro {
+                margin-top: 7.3rem;
+
+                span {
+                    color: $font-color-whiteish;
+                    font-size: 1.3rem;
+                    font-family: $font-family-helvetica-neue;
+                    opacity: .8;
+                    padding: 2rem;
+
+                    &:nth-child(1) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
