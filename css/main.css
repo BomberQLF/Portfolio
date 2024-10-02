@@ -1274,6 +1274,7 @@ footer {
   padding-top: 8rem;
   width: 88%;
   margin: auto;
+  display: none;
 }
 footer .footer_container {
   display: flex;

@@ -44,5 +44,4 @@ document.addEventListener('scroll', () => {
             span.style.transition = `opacity 0.1s ease-out`; // Transition rapide pour revenir en arrière
         }
     });
-
 });
