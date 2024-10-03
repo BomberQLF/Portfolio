@@ -650,6 +650,57 @@ nav .contact_nav span:hover {
   transform: scale(1);
 }
 
+.contact_nav {
+  padding: 28px 40px 0 0;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+}
+.contact_nav span {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f1F1f1;
+  border-bottom: 1px solid #f1F1f1;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.3rem;
+}
+.contact_nav span:hover {
+  cursor: pointer;
+}
+
+.projects_wrapper {
+  overflow-x: hidden;
+}
+.projects_wrapper .upper_teaser .title_teaser_container {
+  position: relative;
+  top: 95px;
+  left: 100px;
+  opacity: 0.8;
+}
+.projects_wrapper .upper_teaser .title_teaser_container .upper_name {
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f1F1f1;
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+.projects_wrapper .upper_teaser .title_teaser_container .lower_name {
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f1F1f1;
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+.projects_wrapper .upper_teaser .teaser_img_container {
+  display: flex;
+  justify-content: center;
+}
+.projects_wrapper .upper_teaser .teaser_img_container .teaser_image {
+  width: 92%;
+  display: block;
+  margin: 0 auto;
+}
+
 .about_me {
   height: 100vh;
   display: flex;

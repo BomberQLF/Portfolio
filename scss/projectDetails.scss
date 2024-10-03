@@ -1,0 +1,65 @@
+$font-family-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
+$font-color-beige: #D9D9D9AD;
+$font-color-blackish: #0e0e0e;
+$font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
+$font-color-whiteish: #f1F1f1;
+
+.contact_nav {
+    padding: 28px 40px 0 0;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+
+    span {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $font-color-whiteish;
+        border-bottom: 1px solid $font-color-whiteish;
+        font-family: $font-family-ibm-plex-mono;
+        font-size: 1.3rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.projects_wrapper {
+    overflow-x: hidden;
+    .upper_teaser {
+        .title_teaser_container {
+            position: relative;
+            top: 95px;
+            left: 100px;
+            opacity: .8;
+        
+            .upper_name {
+                text-transform: uppercase;
+                font-family: $font-family-helvetica-neue;
+                color: $font-color-whiteish;
+                font-size: 5rem;
+                letter-spacing: 3px;
+            }
+
+            .lower_name {
+                text-transform: uppercase;
+                font-family: $font-family-helvetica-neue;
+                color: $font-color-whiteish;
+                font-size: 5rem;
+                letter-spacing: 3px;
+            }
+        }
+
+        .teaser_img_container {
+            display: flex;
+            justify-content: center;  
+
+            .teaser_image {
+                width: 92%;
+                display: block;  
+                margin: 0 auto;
+            }
+        }
+    }
+}
