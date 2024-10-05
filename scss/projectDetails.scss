@@ -27,6 +27,7 @@ $font-color-whiteish: #f1F1f1;
 
 .projects_wrapper {
     overflow-x: hidden;
+    
     .upper_teaser {
         .title_teaser_container {
             position: relative;
@@ -40,6 +41,7 @@ $font-color-whiteish: #f1F1f1;
                 color: $font-color-whiteish;
                 font-size: 5rem;
                 letter-spacing: 3px;
+                margin: 0;
             }
 
             .lower_name {
@@ -48,6 +50,7 @@ $font-color-whiteish: #f1F1f1;
                 color: $font-color-whiteish;
                 font-size: 5rem;
                 letter-spacing: 3px;
+                margin: 0;
             }
         }
 
@@ -61,5 +64,232 @@ $font-color-whiteish: #f1F1f1;
                 margin: 0 auto;
             }
         }
+    }
+
+    .lower_teaser {
+        padding: 6rem 4% 2% 4%;
+
+        .teaser_details_container {
+            grid-column-gap: 8rem;
+            grid-row-gap: 2.5rem;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: .85fr 1fr;
+
+            .teaser_left {
+                display: flex;
+                flex-flow: column;
+                grid-column-gap: 2.5rem;
+                grid-row-gap: 2.5rem;
+
+                .card_list {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    width: 100%;
+                    border: 1px solid rgba(255, 255, 255, .2);
+
+                    .inner_card {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end; 
+                        padding: 10%;
+                        border-right: 1px solid rgba(255, 255, 255, .2);
+                        color: $font-color-whiteish;
+                        font-family: $font-family-helvetica-neue;
+                        aspect-ratio: 1;
+
+                        .inner_details {
+                            display: flex;
+                            align-items: center;  
+                            justify-content: flex-start;
+                            margin-top: auto;      
+
+                            .code {
+                                height: 30px;
+                                width: 30px;
+                                margin-right: 8px;  
+
+                                path {
+                                    stroke: $font-color-whiteish;
+                                }
+                            }
+                        }
+
+                        // Hover effect for inner_card
+                        &:hover {
+                            transition: 1s;
+                            background-color: $font-color-whiteish;
+                            color: $font-color-blackish;
+
+                            .inner_details {
+                                color: $font-color-blackish;
+
+                                .code path {
+                                    stroke: $font-color-blackish;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .details_description_project {
+                    grid-column-gap: 1rem;
+                    grid-row-gap: 1rem;
+                    flex-flow: column;
+                    display: flex;
+                    border-top: 1px solid rgba(255, 255, 255, .2);
+                    padding: 6% 0;
+
+                    .sub_details {
+                        grid-column-gap: 6rem;
+                        grid-row-gap: 2.5rem;
+                        display: flex;
+                        padding-bottom: 4%;
+
+                        .inner_item {
+                            grid-row-gap: 8px;
+                            flex-flow: column;
+                            display: flex;
+
+                            .title_item {
+                                color: $font-color-whiteish;
+                                font-weight: 500;
+                                font-family: $font-family-helvetica-neue;
+                                text-transform: uppercase;
+                                margin-bottom: 6px;
+                                font-size: 1.2rem;
+                                margin-top: 0;
+                            }
+                            .sub_title {
+                                color: #D9D9D9AD;
+                                font-family: $font-family-helvetica-neue;
+                            }
+                        }
+                    }
+
+                    .services {
+                        grid-column-gap: 2.5rem;
+                        grid-row-gap: 1.5rem;
+                        display: flex;
+                        flex-flow: column;
+                        border-top: 1px solid rgba(255, 255, 255, .2);
+                        border-bottom: 1px solid rgba(255, 255, 255, .2);
+                        padding: 6% 0;
+
+                        .title {
+                            color: $font-color-whiteish;
+                            font-weight: 500;
+                            font-family: $font-family-helvetica-neue;
+                            text-transform: uppercase;
+                            margin-bottom: 6px;
+                            font-size: 1.2rem;
+                            margin-top: 0;
+                        }
+
+                        .sub_title {
+                            color: #D9D9D9AD;
+                            font-family: $font-family-helvetica-neue;
+                        }
+                    }
+                }
+            }
+
+            .teaser_right {
+                .project_description {
+                    line-height: 36px;
+
+                    .project_container {
+                        border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+                        h3 {
+                            color: $font-color-whiteish;
+                            font-size: 1.2rem;
+                            text-transform: uppercase;
+                            font-family: $font-family-helvetica-neue;
+                        }
+                        p {
+                            color: #D9D9D9AD;
+                            font-family: $font-family-helvetica-neue;
+                        }
+                    }
+
+                    .solution_container {
+                        h3 {
+                            color: $font-color-whiteish;
+                            font-size: 1.2rem;
+                            text-transform: uppercase;
+                            font-family: $font-family-helvetica-neue;
+                        }
+                        p {
+                            color: #D9D9D9AD;
+                            font-family: $font-family-helvetica-neue;
+                        }
+                    }
+
+                    .teaser_links {
+                        border-top: 1px solid rgba(255, 255, 255, .2);
+
+                        .teaser_links_inner {
+                            h3 {
+                                color: $font-color-whiteish;
+                                font-family: $font-family-helvetica-neue;
+                                font-size: 1.2rem;
+                                text-transform: uppercase;
+                            }
+                            .website,
+                                .github_teaser {
+                                    font-family: $font-family-helvetica-neue;
+                                    text-decoration: none; 
+                    
+                                    a {
+                                        text-decoration: none; 
+                                        color: #4430cf; 
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Media Query
+@media (min-width: 375px) and (max-width: 1024px) {
+    .projects_wrapper .lower_teaser .teaser_details_container .teaser_left .card_list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects_wrapper .lower_teaser .teaser_details_container .teaser_left .details_description_project .sub_details {
+        grid-column-gap: 2rem;
+    }
+
+    .projects_wrapper .lower_teaser .teaser_details_container .teaser_left .card_list .inner_card {
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .projects_wrapper .upper_teaser .title_teaser_container .upper_name {
+        font-size: 3rem;
+    }
+
+    .projects_wrapper .upper_teaser .title_teaser_container .lower_name {
+        font-size: 3rem;
+    }
+
+    .projects_wrapper .upper_teaser .title_teaser_container {
+        top: 55px;
+        left: 30px;
+    }
+    .contact_nav {
+        display: none;
+    }
+    .projects_wrapper .lower_teaser .teaser_details_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .projects_wrapper .lower_teaser .teaser_right {
+        grid-column: 1;
     }
 }
