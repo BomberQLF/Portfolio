@@ -1,20 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const description = document.querySelector('.description_about p');
-    const text = description.textContent;
-    description.innerHTML = ''; // Vider le texte actuel
+document.addEventListener("DOMContentLoaded", function () {
+  const description = document.querySelector(".description_about p");
+  const text = description.textContent;
+  description.innerHTML = ""; // Vider le texte actuel
 
-    // Envelopper chaque lettre dans un span
-    text.split('').forEach(letter => {
-        const span = document.createElement('span');
-        span.textContent = letter;
-        span.style.opacity = '0'; // Initialement masqué
-        description.appendChild(span);
-    });
-});
+  // Envelopper chaque lettre dans un span
+  text.split("").forEach((letter) => {
+    const span = document.createElement("span");
+    span.textContent = letter;
+    span.style.opacity = "0"; // Initialement masqué
+    description.appendChild(span);
+  });
 
-document.addEventListener('scroll', () => {
-    const aboutSection = document.querySelector('.description_about');
-    const spans = aboutSection.querySelectorAll('span');
+  document.addEventListener("scroll", () => {
+    const aboutSection = document.querySelector(".description_about");
+    const spans = aboutSection.querySelectorAll("span");
     const sectionTop = aboutSection.getBoundingClientRect().top;
     const sectionHeight = aboutSection.getBoundingClientRect().height;
     const screenHeight = window.innerHeight;
@@ -29,19 +28,20 @@ document.addEventListener('scroll', () => {
     const isSectionOutOfView = sectionTop + sectionHeight < 0;
 
     spans.forEach((span, index) => {
-        const letterPosition = (index / spans.length) * sectionHeight;
+      const letterPosition = (index / spans.length) * sectionHeight;
 
-        if (scrollPosition > letterPosition && !isSectionOutOfView) {
-            // Si la section est visible ou partiellement visible, animer les lettres
-            span.style.opacity = '1';
-            span.style.transition = `opacity 0.3s ease-out`; // Transition légèrement plus rapide
-        } else if (isSectionOutOfView) {
-            // Si la section est complètement hors de vue, garder l'opacité à 1
-            span.style.opacity = '1';
-        } else {
-            // Si on remonte
-            span.style.opacity = '0.2'; // Légèrement visible en remontant
-            span.style.transition = `opacity 0.1s ease-out`; // Transition rapide pour revenir en arrière
-        }
+      if (scrollPosition > letterPosition && !isSectionOutOfView) {
+        // Si la section est visible ou partiellement visible, animer les lettres
+        span.style.opacity = "1";
+        span.style.transition = `opacity 0.3s ease-out`; // Transition légèrement plus rapide
+      } else if (isSectionOutOfView) {
+        // Si la section est complètement hors de vue, garder l'opacité à 1
+        span.style.opacity = "1";
+      } else {
+        // Si on remonte
+        span.style.opacity = "0.2"; // Légèrement visible en remontant
+        span.style.transition = `opacity 0.1s ease-out`; // Transition rapide pour revenir en arrière
+      }
     });
+  });
 });
