@@ -15,23 +15,6 @@ $font-color-whiteish: #f1F1f1;
     align-items: center;
     height: 100vh;
     padding: 0 2rem; 
-    .title {
-        display: flex;
-        align-items: flex-start;
-
-        .title_before {
-            position: absolute;
-            left: 310px;
-            padding: 30px;
-            color: $font-color-whiteish;
-            text-transform: uppercase;
-            font-family: $font-family-ibm-plex-mono;
-
-            .upper_text {
-                text-align: right;
-                text-transform: uppercase;
-            }
-        }
 
         h2 {
             text-transform: uppercase;
@@ -51,7 +34,6 @@ $font-color-whiteish: #f1F1f1;
             right: 330px;
         }
     }
-}
 
 #scrolling-work {
     margin-top: 3rem;
@@ -146,6 +128,7 @@ $font-color-whiteish: #f1F1f1;
     .more_projects {
         display: flex;
         margin-top: 3rem;
+        margin-left: 1.7rem;
 
         a {
             color: $font-color-whiteish;
@@ -170,11 +153,6 @@ $font-color-whiteish: #f1F1f1;
 .other_mockup {
     width: min-content;
     padding: 20px 20px 0 20px;
-    border-top: 1px solid rgba(255, 255, 255, .2);
-}
-
-.other_mockup {
-    border-left: 1px solid rgba(255, 255, 255, .2);
 }
 
 nav {
@@ -251,11 +229,6 @@ nav {
 @media (min-width: 375px) and (max-width: 450px) {
     #scrolling-work .scrolling-text-content span {
         font-size: 3rem;
-    }
-
-    .displayed_projects .title_display {
-        display: flex;
-        justify-content: center;
     }
 
     .displayed_projects .img_container {

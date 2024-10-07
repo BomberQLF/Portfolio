@@ -251,30 +251,14 @@
   height: 100vh;
   padding: 0 2rem;
 }
-.project_section .title {
-  display: flex;
-  align-items: flex-start;
-}
-.project_section .title .title_before {
-  position: absolute;
-  left: 310px;
-  padding: 30px;
-  color: #f1F1f1;
-  text-transform: uppercase;
-  font-family: "IBM Plex Mono", monospace;
-}
-.project_section .title .title_before .upper_text {
-  text-align: right;
-  text-transform: uppercase;
-}
-.project_section .title h2 {
+.project_section h2 {
   text-transform: uppercase;
   color: #f1F1f1;
   font-size: 7rem;
   margin: 0;
   font-family: "PP Neue Montreal", sans-serif;
 }
-.project_section .title .title_after {
+.project_section .title_after {
   padding: 30px;
   color: #f1F1f1;
   text-transform: uppercase;
@@ -369,6 +353,7 @@
 .displayed_projects .more_projects {
   display: flex;
   margin-top: 3rem;
+  margin-left: 1.7rem;
 }
 .displayed_projects .more_projects a {
   color: #f1F1f1;
@@ -387,11 +372,6 @@
 .other_mockup {
   width: min-content;
   padding: 20px 20px 0 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.other_mockup {
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 nav {
@@ -456,10 +436,6 @@ nav a svg {
 @media (min-width: 375px) and (max-width: 450px) {
   #scrolling-work .scrolling-text-content span {
     font-size: 3rem;
-  }
-  .displayed_projects .title_display {
-    display: flex;
-    justify-content: center;
   }
   .displayed_projects .img_container {
     display: flex;
@@ -940,11 +916,15 @@ nav .contact_nav span:hover {
     margin: 0;
   }
 }
+nav {
+  padding: 0;
+}
 nav .contact_nav {
   padding: 28px 40px 0 0;
   position: fixed;
   right: 0;
   z-index: 2;
+  bottom: 53rem;
 }
 nav .contact_nav span {
   text-transform: uppercase;
@@ -958,80 +938,36 @@ nav .contact_nav span:hover {
   cursor: pointer;
 }
 
-.introduction {
-  height: 70vh;
-  margin-top: 6%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+.horizontal_body {
+  display: flex;
+  overflow-x: scroll;
+  height: 100vh;
+  scroll-snap-type: x mandatory;
 }
-.introduction .about_container {
-  padding: 0 4%;
-  width: fit-content;
-  height: 87.5%;
-  margin-top: 5rem;
+.horizontal_body .horizontal_sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  color: #f1F1f1;
+  flex: none;
 }
-.introduction .about_container .about_title {
+.horizontal_body .horizontal_sections h1 {
   font-size: 5rem;
-  text-transform: uppercase;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.introduction .about_container .about_title h1 {
-  color: #f1F1f1;
-  margin-top: 0;
+
+#firstSection {
+  background-color: #0e0e0e;
 }
-.introduction .about_container .about_title h1 span {
-  font-size: 1.3rem;
-  position: absolute;
-  color: rgba(217, 217, 217, 0.6784313725);
-  font-family: "IBM Plex Mono", monospace;
-  text-transform: none;
+
+#secondSection {
+  background-color: #1b1b1b;
 }
-.introduction .about_container .about_title h1 span:hover {
-  cursor: help;
-}
-.introduction .about_container .description_intro_container {
-  margin-top: 10rem;
-}
-.introduction .about_container .description_intro_container .tags_intro {
-  margin-top: 1rem;
-}
-.introduction .about_container .description_intro_container .tags_intro span {
-  color: #f1F1f1;
-  font-size: 1.3rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  opacity: 0.8;
-  padding: 1rem;
-}
-.introduction .about_container .description_intro_container .tags_intro span:nth-child(1) {
-  padding-left: 0;
-}
-.introduction .about_container .description_intro_container .about_description {
-  margin-top: 1rem;
-  width: 35rem;
-}
-.introduction .about_container .description_intro_container .about_description p {
-  font-size: 1.3rem;
-  color: #f1F1f1;
-  opacity: 0.7;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 3rem;
-}
-.introduction .about_container .description_intro_container .about_description p .highlight {
-  font-weight: bold;
-  color: #4169E1;
-}
-.introduction .about_container .tags_intro {
-  margin-top: 7.3rem;
-}
-.introduction .about_container .tags_intro span {
-  color: #f1F1f1;
-  font-size: 1.3rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  opacity: 0.8;
-  padding: 2rem;
-}
-.introduction .about_container .tags_intro span:nth-child(1) {
-  padding-left: 0;
+
+#thirdSection {
+  background-color: #2c2a2a;
 }
 
 .skills-scroll {
@@ -1203,8 +1139,7 @@ nav .contact_nav span:hover {
   background-color: transparent;
   border: 1px dotted rgba(255, 255, 255, 0.2);
   color: rgb(255, 255, 255);
-  opacity: 0.7;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 20px;
   border-radius: 4px;
   transition: all 0.3s ease;
