@@ -240,11 +240,12 @@ $font-color-whiteish: #f1F1f1;
                             .website,
                                 .github_teaser {
                                     font-family: $font-family-helvetica-neue;
-                                    text-decoration: none; 
                     
                                     a {
                                         text-decoration: none; 
-                                        color: #4430cf; 
+                                        color: $font-color-whiteish; 
+                                        border-bottom: 1px solid $font-color-whiteish;
+                                        padding-bottom: 2px;
                                     }
                                 }
                         }

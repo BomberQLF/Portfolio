@@ -828,12 +828,13 @@ nav .contact_nav span:hover {
 .projects_wrapper .lower_teaser .teaser_details_container .teaser_right .project_description .teaser_links .teaser_links_inner .website,
 .projects_wrapper .lower_teaser .teaser_details_container .teaser_right .project_description .teaser_links .teaser_links_inner .github_teaser {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
 }
 .projects_wrapper .lower_teaser .teaser_details_container .teaser_right .project_description .teaser_links .teaser_links_inner .website a,
 .projects_wrapper .lower_teaser .teaser_details_container .teaser_right .project_description .teaser_links .teaser_links_inner .github_teaser a {
   text-decoration: none;
-  color: #4430cf;
+  color: #f1F1f1;
+  border-bottom: 1px solid #f1F1f1;
+  padding-bottom: 2px;
 }
 
 @media (min-width: 375px) and (max-width: 1024px) {
