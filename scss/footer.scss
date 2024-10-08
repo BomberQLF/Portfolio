@@ -8,11 +8,8 @@ $font-color-bg-blue-form: #4430cf;
 $font-color-whiteish: #f1F1f1;
 
 footer {
-    height: 100vh;
-    padding-top: 8rem;
-    width: 88%;
-    margin: auto;
-    display: none;
+    height: 60vh;
+    padding-top: 3rem;
 
     .footer_container {
         display: flex;
@@ -20,6 +17,7 @@ footer {
         flex-direction: column;
         gap: 150px;
         width: 88%;
+        margin: auto;
 
         .top_footer {
             display: flex;
@@ -50,14 +48,6 @@ footer {
                     margin-left: 4rem;
                     font-family: $font-family-helvetica-neue;
                     font-weight: 500;
-
-                    img {
-                        height: 130px;
-                        width: 130px;
-                        transform: rotate(320deg);
-                        position: relative;
-                        top: 28px;
-                    }
                 }
             }
         }
@@ -69,7 +59,6 @@ footer {
             text-transform: uppercase;
             font-size: 1rem;
             margin-left: 2rem;
-            border-bottom: 1px solid rgba(255, 255, 255, .2);
             padding-bottom: 50px;
 
             .left_side_footer {
@@ -168,5 +157,33 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media (min-width: 375px) and (max-width:450px) {
+    body {
+        overflow-x: hidden;
+    }
+    footer .footer_container .bottom_footer {
+        display: block;
+        margin-left: 1rem; 
+        width: 104%;   
+    }
+
+    footer .footer_container .top_footer .text_footer_container .bottom_text_footer {
+        font-size: 4.5rem;
+    }
+
+    footer .footer_container .top_footer .text_footer_container .top_text_footer {
+        font-size: 4.5rem;
+    }
+
+    .form_container {
+        margin: 0 7rem 41rem 3rem;
+        height: 100vh;
+    }
+
+    footer .footer_container .top_footer .text_footer_container .bottom_text_footer {
+        width: 82%;
     }
 }

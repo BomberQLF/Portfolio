@@ -175,7 +175,7 @@ nav {
 }
 
 .my_work {
-    margin-top: 2rem;
+    margin-top: 8rem;
     padding-left: 2.5rem;
 
     .my_work_title {
@@ -252,6 +252,10 @@ nav {
     .displayed_projects {
         padding: 0 1.2rem 0 0;
         height: 100vh;
+    }
+
+    .scrolling-text {
+        display: none;
     }
 
     .scrolling-text span {

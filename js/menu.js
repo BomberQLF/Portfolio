@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body.appendChild(navSection);
 
             navSection.style.height = "100vh";
-            navSection.style.backgroundColor = "#a6a19d";
+            navSection.style.backgroundColor = "#0e0e0e";
             navSection.style.position = 'fixed';
             navSection.style.top = '0';
             navSection.style.left = '0';
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             line1.setAttribute("x2", "20");
             line1.setAttribute("y2", "4");
             line1.setAttribute("stroke-width", "2");
-            line1.setAttribute("stroke", "#0e0e0e");
+            line1.setAttribute("stroke", "#ffffff");
             closeButton.appendChild(line1);
 
             const line2 = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -49,19 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
             line2.setAttribute("x2", "20");
             line2.setAttribute("y2", "20");
             line2.setAttribute("stroke-width", "2");
-            line2.setAttribute("stroke", "#0e0e0e");
+            line2.setAttribute("stroke", "#ffffff");
             closeButton.appendChild(line2);
 
             // Effet de hover (couleur et rotation)
             closeButton.addEventListener('mouseover', () => {
-                line1.setAttribute('stroke', '#4430cf');
-                line2.setAttribute('stroke', '#4430cf');
+                line1.setAttribute('stroke', '#D9D9D9AD');
+                line2.setAttribute('stroke', '#D9D9D9AD');
                 closeButton.style.transform = 'rotate(90deg)';
+                closeButton.style.transition = '.7s';
             });
 
             closeButton.addEventListener('mouseout', () => {
-                line1.setAttribute('stroke', '#0e0e0e');
-                line2.setAttribute('stroke', '#0e0e0e');
+                line1.setAttribute('stroke', '#ffffff');
+                line2.setAttribute('stroke', '#ffffff');
                 closeButton.style.transform = 'rotate(0deg)';
             });
 
@@ -82,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.style.alignItems = 'center'; 
                 li.style.justifyContent = 'center'; 
                 li.style.position = 'relative'; 
+                li.style.borderBottom = '1px solid rgba(255, 255, 255, .2)';
 
                 li.style.overflow = 'hidden';
                 li.style.zIndex = '1'; 
@@ -98,12 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     a.href = 'projects.html';
                 } else if (i === 2) {
                     a.id = 'apropos'; 
-                    a.textContent = 'A Propos';
+                    a.textContent = 'About';
                     a.href = 'about.html';
                 }
 
                 a.style.textDecoration = 'none';
-                a.style.color = '#0e0e0e';
+                a.style.color = '#ffffff';
                 a.style.fontSize = '3.5rem';
                 a.style.fontFamily = '"Helvetica Neue"';
                 a.style.textTransform = 'uppercase';
@@ -119,11 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.appendChild(a);
 
                 li.addEventListener('mouseover', () => {
-                    a.style.color = '#ffffff'; 
+                    a.style.color = '#D9D9D9AD'; 
+                    a.style.transition = '.7s'
                 });
 
                 li.addEventListener('mouseout', () => {
-                    a.style.color = '#0e0e0e'; 
+                    a.style.color = '#ffffff'; 
                 });
             }
 

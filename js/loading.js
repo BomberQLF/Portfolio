@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       loadingContainer.style.display = 'none';
       footer.style.display = "flex";
+      footer.style.flexDirection = "column";
       main.style.display = "block";
       hiddenSections.style.display = 'block'; 
       hiddenSections.classList.add('show');
