@@ -269,14 +269,14 @@
 }
 
 #scrolling-work {
-  margin-top: 3rem;
+  margin-top: 13rem;
 }
 
 .scrolling-text {
   width: 100vw;
   overflow: hidden;
   position: relative;
-  top: -7.2rem;
+  top: -3.2rem;
   background-color: rgba(217, 217, 217, 0.6784313725);
   color: #0e0e0e;
   font-family: "PP Neue Montreal", sans-serif;
@@ -315,8 +315,7 @@
   }
 }
 .displayed_projects {
-  height: 70vh;
-  padding: 0 2rem 0 1.6rem;
+  height: 90vh;
   gap: 3rem;
 }
 .displayed_projects .title_display {
@@ -331,21 +330,21 @@
 }
 .displayed_projects .img_container {
   display: flex;
+  padding: 1%;
 }
 .displayed_projects .img_container img {
-  max-width: calc(50vw - 4rem);
+  max-width: calc(50vw - 3rem);
   height: auto;
   padding-bottom: 1rem;
 }
 .displayed_projects .img_container span {
-  font-family: "IBM Plex Mono", monospace;
-  color: #f1F1f1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(217, 217, 217, 0.7960784314);
   font-size: 1.1rem;
-  text-transform: uppercase;
 }
 .displayed_projects .img_container h3 {
-  color: rgba(217, 217, 217, 0.7960784314);
-  font-size: 1.8rem;
+  color: #f1F1f1;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-family: "PP Neue Montreal", sans-serif;
   margin-top: 6px;
@@ -354,11 +353,12 @@
   display: flex;
   margin-top: 3rem;
   margin-left: 1.7rem;
+  padding: 1%;
 }
 .displayed_projects .more_projects a {
   color: #f1F1f1;
   text-transform: uppercase;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   font-size: 1.5rem;
   border-bottom: #f1F1f1 1px solid;

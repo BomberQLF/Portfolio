@@ -36,14 +36,14 @@ $font-color-whiteish: #f1F1f1;
     }
 
 #scrolling-work {
-    margin-top: 3rem;
+    margin-top: 13rem;
 }
 
 .scrolling-text {
     width: 100vw;
     overflow: hidden;
     position: relative;
-    top: -7.2rem;
+    top: -3.2rem;
     background-color: $font-color-beige;
     color: $font-color-blackish;
     font-family: $font-family-pp-neue-montreal;
@@ -84,8 +84,7 @@ $font-color-whiteish: #f1F1f1;
 }
 
 .displayed_projects {
-    height: 70vh;
-    padding: 0 2rem 0 1.6rem; 
+    height: 90vh;
     gap: 3rem; 
 
     .title_display {
@@ -101,23 +100,23 @@ $font-color-whiteish: #f1F1f1;
 
     .img_container {
         display: flex;
+        padding: 1%;
 
         img {
-            max-width: calc(50vw - 4rem); 
+            max-width: calc(50vw - 3rem); 
             height: auto;
             padding-bottom: 1rem;
         }
 
         span {
-            font-family: $font-family-ibm-plex-mono;
-            color: $font-color-whiteish;
+            font-family: $font-family-helvetica-neue;
+            color: #d9d9d9cb;
             font-size: 1.1rem;
-            text-transform: uppercase;
         }
 
         h3 {
-            color: #d9d9d9cb;
-            font-size: 1.8rem;
+            color: $font-color-whiteish;
+            font-size: 1.6rem;
             text-transform: uppercase;
             font-family: "PP Neue Montreal", sans-serif;
             margin-top: 6px;
@@ -129,11 +128,12 @@ $font-color-whiteish: #f1F1f1;
         display: flex;
         margin-top: 3rem;
         margin-left: 1.7rem;
+        padding: 1%;
 
         a {
             color: $font-color-whiteish;
             text-transform: uppercase;
-            font-family: $font-family-ibm-plex-mono;
+            font-family: $font-family-helvetica-neue;
             text-decoration: none;
             font-size: 1.5rem;
             border-bottom: $font-color-whiteish 1px solid;
