@@ -83,27 +83,32 @@ $font-color-whiteish: #f1F1f1;
 @media (min-width: 375px) and (max-width: 450px) {
     .skills_section {
         height: 100vh;
-        margin: 25rem 0 15rem 0;
+        margin: 25rem 0 36rem 0;
+
+    }
+
+    .skills_section .skills_container {
+        overflow-x: hidden; 
     }
 
     .skills_section .skills_container .upper_container, 
     .skills_section .skills_container .lower_container {
         display: block; 
-        margin-left: 26%;
+        margin: 0;
+        padding: 0 2rem; 
     }
 
     .skills_section .skills_container .upper_container .under_skills_container, 
     .skills_section .skills_container .lower_container .under_skills_container {
         display: flex;
-        justify-content: space-between;
-        gap: 6rem;
+        flex-direction: column; 
+        gap: 1rem; 
     }
 
     .skills_section .skills_container .upper_container .upper_skills, 
-    .skills_section .skills_container .upper_container .lower_skills, 
-    .skills_section .skills_container .lower_container .upper_skills, 
     .skills_section .skills_container .lower_container .lower_skills {
         margin-top: 1rem;
+        width: 100%; 
     }
 
     .skills_section .skills_container .upper_container .title h3, 
@@ -114,6 +119,8 @@ $font-color-whiteish: #f1F1f1;
     .skills_section .skills_container .upper_container .title span, 
     .skills_section .skills_container .lower_container .title span {
         font-size: 0.8rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
     }
 
     .skills_section .skills_container .upper_container .under_skills_container .left_side .under_skills, 
@@ -122,6 +129,10 @@ $font-color-whiteish: #f1F1f1;
     .skills_section .skills_container .lower_container .under_skills_container .right_side .under_skills {
         font-size: 0.8rem;
         width: auto;
+    }
+
+    .form_container h3 {
+        font-size: 2rem !important;
     }
 }
 

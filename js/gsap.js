@@ -9,3 +9,4 @@ skills.forEach((e) => {
         gsap.to(hover.target, {paddingLeft: 0, duration: 0.5, ease: "power2.out"});
     });
 });
+
