@@ -93,15 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (i === 0) {
                     a.id = 'home'; 
                     a.textContent = 'Home';
-                    a.href = 'index.html';
+                    a.href = '/Portfolio/index.html';
                 } else if (i === 1) {
                     a.id = 'nav_project'; 
                     a.textContent = 'Projects';
-                    a.href = 'projects.html';
+                    a.href = '/Portfolio/projects.html';
                 } else if (i === 2) {
                     a.id = 'apropos'; 
                     a.textContent = 'About';
-                    a.href = 'about.html';
+                    a.href = '/Portfolio/about.html';
                 }
 
                 a.style.textDecoration = 'none';

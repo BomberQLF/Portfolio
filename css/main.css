@@ -1565,6 +1565,10 @@ body main {
   cursor: pointer;
 }
 
+footer {
+  display: none;
+}
+
 .navIcon {
   height: 30px;
   width: 30px;
