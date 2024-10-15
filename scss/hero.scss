@@ -72,7 +72,7 @@ $font-color-whiteish: #f1F1f1;
       text-decoration: none;
       color: $font-color-whiteish;
       border-bottom: 1px solid $font-color-whiteish;
-      font-family: $font-family-ibm-plex-mono;
+      font-family: $font-family-helvetica-neue;
       font-size: 1.3rem;
 
       &:hover {
@@ -152,7 +152,7 @@ $font-color-whiteish: #f1F1f1;
           text-decoration: none;
           color: $font-color-whiteish;
           margin-right: 3rem;
-          font-family: $font-family-ibm-plex-mono;
+          font-family: $font-family-helvetica-neue;
           text-transform: uppercase;
           position: relative;
           font-size: 0.8rem;
@@ -169,7 +169,7 @@ $font-color-whiteish: #f1F1f1;
       padding-left: 4.5rem;
 
       h2 {
-        font-family: $font-family-ibm-plex-mono;
+        font-family: $font-family-helvetica-neue;
         text-transform: uppercase;
         font-size: 1.3rem;
       }

@@ -100,7 +100,7 @@ $font-color-whiteish: #f1F1f1;
 
     .img_container {
         display: flex;
-        padding: 1%;
+        padding: 1% 1% 1% 2.8%;
 
         img {
             max-width: calc(50vw - 3rem); 
@@ -147,337 +147,111 @@ $font-color-whiteish: #f1F1f1;
 
 }
 
-// ALL PROJECTS PAGE CSS
-
-.prestige_yacht_mockup,
-.other_mockup {
-    width: min-content;
-    padding: 20px 20px 0 20px;
-}
-
-nav {
-    display: flex;
-    padding: 2rem;
-    justify-content: space-between;
-    align-items: center;
-
-    a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: $font-color-whiteish;
-        font-family: $font-family-ibm-plex-mono;
-
-      svg {
-        height: 50px;
-        width: 50px;
-        }
-    }
-}
+// Projects list PAGE
 
 .my_work {
-    margin-top: 8rem;
-    padding-left: 2.5rem;
+    padding-left: 8rem;
+    margin-top: 6rem;
 
-    .my_work_title {
+    h1 {
         color: $font-color-whiteish;
-        text-transform: uppercase;
         font-family: $font-family-helvetica-neue;
-        font-weight: 400;
-        font-size: 6rem;
-        margin: 0;
+        font-size: 2.3rem;
 
         span {
-            font-size: 1.3rem;
-            position: absolute;
-            left: 38%;
-            color: $font-color-beige;
-            font-family: $font-family-ibm-plex-mono;
-            text-transform: none;
-        }
-    }
-
-    .my_work_filter {
-        margin-top: 2rem;
-        display: flex;
-        list-style: none;
-        gap: 1rem;
-        padding: 0;
-
-        li {
-           color: $font-color-beige; 
-           border: 1px solid $font-color-beige;
-           padding: 15px;
-           font-family: $font-family-ibm-plex-mono;
-
-           &:hover {
-            cursor: pointer;
-           }
+            font-size: 1rem;
+            position: relative;
+            top: -20px;
         }
     }
 }
 
-.work_filter_item.active_filter_item {
-    color: $font-color-whiteish !important;
-    border-color: $font-color-whiteish !important;
-}
+.my_work_filter {
+    display: flex;
+    justify-content: flex-start; // Aligne les filtres à gauche
+    gap: 15px;
+    list-style-type: none; // Supprime les puces
+    margin-top: 20px;
+    padding: 0;
+    
+    .work_filter_item {
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: 'Helvetica Neue', sans-serif;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
 
-
-// MEDIA QUERY
-// 375px devices
-// Main screen
-
-@media (min-width: 375px) and (max-width: 450px) {
-    #scrolling-work .scrolling-text-content span {
-        font-size: 3rem;
-    }
-
-    .displayed_projects .img_container {
-        display: flex;
-        gap: 3rem;
-        flex-direction: column;
-    }
-
-    .img_container .prestige_yacht_mockup, 
-    .img_container .other_mockup {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .displayed_projects .img_container img {
-        max-width: calc(50vw - -8rem);
-        height: auto;
-        padding-bottom: 1rem;
-    }
-
-    .displayed_projects {
-        padding: 0 1.2rem 0 0;
-        height: 100vh;
-        margin-bottom: 50rem;
-    }
-
-    .scrolling-text {
-        display: none;
-    }
-
-    .scrolling-text span {
-        padding: 0 2rem;
-        font-size: 3rem;
-    }
-}
-
-// MEDIA FOR DEVICES SUCH AS IPADS
-@media (min-width: 768px) and (max-width: 1024px) {
-    .displayed_projects .img_container {
-        display: block;
-    }
-
-    .displayed_projects .prestige_yacht_mockup,
-    .displayed_projects .other_mockup {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .displayed_projects .img_container img {
-        max-width: calc(50vw - -15rem);
-    }
-}
-
-
-
-
-// Project page 
-// Project page 
-// Project page 
-// Project page 
-
-// MEDIA QUERY 375px to 450px
-// Project page 
-
-@media (min-width: 375px) and (max-width: 450px) {
-    nav .contact_nav a {
-        display: none;
-    }
-
-    .burgerIcon {
-        display: block;
-        top: 30px !important;
-        margin-right: .8rem;
-    }
-
-    .my_work .my_work_title {
-        font-size: 3.5rem;
-    }
-
-    .my_work .my_work_title span {
-        font-size: 1.1rem;
-        left: 20rem;
-    }
-
-    .my_work .my_work_filter {
-        font-size: .8rem;
-        flex-wrap: wrap;
-    }
-
-    .case_list .case .swiper .swiper_image img {
-        width: 250px !important;
-    }
-
-    .case_list .case .case_text .case_button {
-        display: none !important;
-    }
-
-    .case_list .case {
-        flex-direction: column-reverse;
-        height: 800px !important;
-    }
-
-    .case_list .case .case_text {
-        width: 380px !important;
-        border-right: none !important;
-        display: block !important;
-    }
-
-    .swiper_image {
-        height: 240px;
-        margin-bottom: 10%;
-    }
-}
-
-
-// Normal COMPUTER screens
-
-nav {
-    .contact_nav {
-        padding: 28px 40px 0 0;
-        position: fixed;
-        right: 0;
-        z-index: 2;
-
-        span {
-            text-transform: uppercase;
-            text-decoration: none;
-            color: $font-color-whiteish;
-            border-bottom: 1px solid $font-color-whiteish;
-            font-family: $font-family-ibm-plex-mono;
-            font-size: 1.3rem;
-
-            &:hover {
-                cursor: pointer;
-            }
+        &.active_filter_item {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
     }
 }
-
 
 .case_list {
-    margin-top: 3rem;
-
-    .case {
-        display: flex;
-        align-items: center;
-        height: 500px;
-        border-top: 1px solid rgba(255, 255, 255, .2);
-        border-bottom: 1px solid rgba(255, 255, 255, .2);
-        position: relative;
-        overflow: hidden;
-
-        .case_text {
-            padding: 2rem;
-            border-right: 1px solid rgba(255, 255, 255, .2);
-            width: 470px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            height: 100%;
-
-            .case_text_description {
-                .case_title {
-                    color: $font-color-whiteish;
-                    text-transform: uppercase;
-                    margin: 0 0 20px 0;
-                    font-family: $font-family-helvetica-neue;
-                }
-
-                .case_description {
-                    color: $font-color-whiteish;
-                    font-family: $font-family-helvetica-neue;
-                    max-width: 330px;
-                    font-weight: 300;
-                    font-size: 1rem;
-                }
-            }
-
-            .case_button {
-                margin-bottom: .8rem;
-                display: block;
-                transform: scale(0);
-                transition: transform 0.5s ease-out;
-
-                a {
-                    display: block;
-                    text-decoration: none;
-                    color: #f1f1f1;
-                    border: 1px solid rgba(255, 255, 255, 0.2);
-                    border-radius: 50%;
-                    padding: 42px 35px;
-                    text-align: center;
-                    max-width: 120px;
-                    font-size: 0.8rem;
-                    font-family: "IBM Plex Mono", monospace;
-                    text-transform: uppercase;
-
-                    &:hover {
-                        color: $font-color-blackish;
-                        background-color: $font-color-whiteish;
-                        transition: 1s;
-                    }
-                }
-            }
-
-            .case_tags {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 10px;
-
-                .tag {
-                    color: rgba(217, 217, 217, 0.6784313725);
-                    border: 1px solid rgba(217, 217, 217, 0.6784313725);
-                    padding: 10px;
-                    font-family: $font-family-ibm-plex-mono;
-                    font-size: .8rem;
-                }
-            }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px;
+    gap: 20px;
+  }
+  
+  .case {
+    width: 45%; // Two containers per row
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #201f1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #d9d9d92c;
+  
+    .inner_case_container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  
+      .case_img {
+        img {
+          width: 100%;
+          height: 440px;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
         }
-
-        .swiper {
-            width: 100%;
-            margin: 0 0 0 20px;
-            padding: 20px 0;
-            position: relative;
-            overflow-x: scroll;
-            overflow-y: hidden;
-
-            .swiper_container {
-                display: flex; 
-                width: auto;
-                height: 100%;
-            }
-
-            .swiper_image {                
-                img {
-                    width: 670px;
-                    margin-right: 15px;
-                    height: 446px;
-                }
-            }
+      }
+  
+      .text_case_container {
+        padding: 20px;
+  
+        .tags_container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-bottom: 20px;
+  
+          .tags {
+            padding: 8px 12px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            font-size: 14px;
+            color: #fff;
+            font-family: 'Helvetica Neue', sans-serif;
+          }
         }
-
-        &:hover {
-            .case_button {
-                transform: scale(1);
-            }
+  
+        .case_title {
+          h1 {
+            color: #fff;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+          }
         }
+      }
     }
-}
+  }
