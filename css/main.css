@@ -482,7 +482,7 @@ nav a svg {
   nav .contact_nav a {
     display: none;
   }
-  #burgerIcon {
+  .burgerIcon {
     display: block;
     top: 30px !important;
     margin-right: 0.8rem;
@@ -1558,10 +1558,10 @@ body main {
   display: none;
 }
 
-#burgerIcon {
+.burgerIcon {
   display: none;
 }
-#burgerIcon:hover {
+.burgerIcon:hover {
   cursor: pointer;
 }
 
@@ -1579,7 +1579,7 @@ footer {
   #nav-bar {
     display: none;
   }
-  #burgerIcon {
+  .burgerIcon {
     display: block;
     width: 40px;
     height: 40px;
@@ -1590,7 +1590,7 @@ footer {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #burgerIcon {
+  .burgerIcon {
     display: block;
     width: 45px;
     height: 45px;

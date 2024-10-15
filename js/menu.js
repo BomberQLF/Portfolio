@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     let body = document.querySelector('body');
     let menu = document.getElementById('menu');
+    let burgerIcons = document.querySelectorAll('.burgerIcon');
     let navSection;
 
-    menu.addEventListener('click', () => {
+    const openNav = () => {
         if (!navSection) {
             navSection = document.createElement('section');
             navSection.classList.add('navMenu');
@@ -153,5 +154,13 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             navSection.style.opacity = '1';
         }
+    };
+
+    // Listener pour le bouton menu
+    menu.addEventListener('click', openNav);
+
+    // Listener pour toutes les icônes burger sur les différentes pages
+    burgerIcons.forEach((burgerIcon) => {
+        burgerIcon.addEventListener('click', openNav);
     });
 });
