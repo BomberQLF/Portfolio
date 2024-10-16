@@ -434,6 +434,7 @@
 .case .inner_case_container .case_img img {
   width: 100%;
   height: 440px;
+  object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -1231,12 +1232,14 @@ nav .contact_nav span:hover {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3rem;
   color: #f1f1f1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .testimonials p {
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 1.2rem;
   color: rgba(217, 217, 217, 0.6784313725);
+}
+.testimonials h2 + p {
   margin-bottom: 3rem;
 }
 .testimonials .testimonial-container {
@@ -1245,11 +1248,16 @@ nav .contact_nav span:hover {
   gap: 2rem;
 }
 .testimonials .testimonial-card {
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
   padding: 1.5rem;
-  width: 350px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  width: 430px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -5px 10px rgba(94, 93, 93, 0.07), 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 .testimonials .testimonial-card .testimonial-text {
   font-family: "PP Neue Montreal", sans-serif;

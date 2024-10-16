@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Fonction pour afficher ou masquer des éléments
     function showElements(elements) {
         elements.forEach(element => {
-            element.style.display = 'flex';
+            element.style.display = 'block';
         });
     }
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     filterProjects(filterAcademic, Array.from(academic), Array.from(personal), Array.from(landingPage), Array.from(concept));
     filterProjects(filterConcept, Array.from(concept), Array.from(personal), Array.from(landingPage), Array.from(academic));
 
-    // Si tu veux un filtre pour tout afficher
+    // Filtre pour tout afficher
     filterAll.addEventListener('click', () => {
         // Tout afficher quand on clique sur 'All'
         showElements(Array.from(personal).concat(Array.from(landingPage), Array.from(academic), Array.from(concept)));

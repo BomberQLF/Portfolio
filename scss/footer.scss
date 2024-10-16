@@ -22,13 +22,16 @@ $font-color-whiteish: #f1f1f1;
         font-family: $font-family-helvetica-neue;
         font-size: 3rem;
         color: $font-color-whiteish;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     p {
         font-family: $font-family-pp-neue-montreal;
         font-size: 1.2rem;
         color: $font-color-beige;
+    }
+
+    h2 + p {
         margin-bottom: 3rem;
     }
 
@@ -39,12 +42,17 @@ $font-color-whiteish: #f1f1f1;
     }
 
     .testimonial-card {
-        background-color: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 18px;
         padding: 1.5rem;
-        width: 350px;
-
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        width: 430px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 -5px 10px rgb(94 93 93 / 7%), 0 5px 20px rgba(0, 0, 0, 0.05);
+        
         .testimonial-text {
             font-family: $font-family-pp-neue-montreal;
             font-size: 1.1rem;
