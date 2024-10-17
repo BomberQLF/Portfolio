@@ -459,8 +459,61 @@
   color: #fff;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.case .inner_case_container .text_case_container .case_title h1 a {
+  display: flex;
+}
+.case .inner_case_container .text_case_container .case_title h1 a svg {
+  height: 30px;
 }
 
+@media (min-width: 375px) and (max-width: 475px) {
+  .displayed_projects .img_container img {
+    max-width: calc(50vw + 10rem);
+  }
+  .prestige_yacht_mockup {
+    display: flex;
+    flex-direction: column;
+  }
+  .displayed_projects .img_container {
+    display: flex;
+    padding: 1% 1% 1% 2.8%;
+    flex-direction: column;
+  }
+  .my_work h1 {
+    padding-left: 2rem;
+  }
+  .my_work_filter {
+    flex-wrap: wrap;
+    padding: 0 0 0 2rem;
+  }
+  .my_work {
+    padding: 0;
+  }
+  .case {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .case .inner_case_container .case_img img {
+    height: 250px;
+  }
+  .text_case_container {
+    padding: 10px;
+  }
+  .case_title h1 {
+    font-size: 1rem;
+  }
+  .tags_container {
+    gap: 5px;
+  }
+  .tags {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
 .contact_nav {
   padding: 28px 40px 0 0;
   position: fixed;
@@ -1076,7 +1129,7 @@ nav .contact_nav span:hover {
 @media (min-width: 375px) and (max-width: 450px) {
   .skills_section {
     height: 100vh;
-    margin: 25rem 0 36rem 0;
+    margin: 55rem 0 36rem 0;
   }
   .skills_section .skills_container {
     overflow-x: hidden;
@@ -1086,6 +1139,12 @@ nav .contact_nav span:hover {
     display: block;
     margin: 0;
     padding: 0 2rem;
+  }
+  .skills-scroll {
+    display: none;
+  }
+  #scrolling-work {
+    display: none;
   }
   .skills_section .skills_container .upper_container .under_skills_container,
   .skills_section .skills_container .lower_container .under_skills_container {
@@ -1224,6 +1283,14 @@ nav .contact_nav span:hover {
   border: 1px solid rgba(217, 217, 217, 0.6784313725);
 }
 
+@media (min-width: 375px) and (max-width: 475px) {
+  .footer_contact .footer_img_container img {
+    display: none;
+  }
+  .form_container {
+    margin: auto 2rem 4rem 2rem;
+  }
+}
 .testimonials {
   padding: 4rem 2rem;
   text-align: center;
@@ -1291,6 +1358,17 @@ nav .contact_nav span:hover {
   margin: 0;
 }
 
+@media (min-width: 375px) and (max-width: 475px) {
+  .testimonials .testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials .testimonial-card .testimonial-footer {
+    justify-content: center;
+  }
+}
 ::selection {
   background-color: #4430cf;
 }

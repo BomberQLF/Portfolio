@@ -83,7 +83,7 @@ $font-color-whiteish: #f1F1f1;
 @media (min-width: 375px) and (max-width: 450px) {
     .skills_section {
         height: 100vh;
-        margin: 25rem 0 36rem 0;
+        margin: 55rem 0 36rem 0;
 
     }
 
@@ -96,6 +96,14 @@ $font-color-whiteish: #f1F1f1;
         display: block; 
         margin: 0;
         padding: 0 2rem; 
+    }
+
+    .skills-scroll {
+        display: none;
+    }
+
+    #scrolling-work {
+        display: none;
     }
 
     .skills_section .skills_container .upper_container .under_skills_container, 

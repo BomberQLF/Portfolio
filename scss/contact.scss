@@ -97,3 +97,13 @@ $font-color-bg-blue-form: #4430cf;
         }
     }
 }
+
+@media (min-width: 375px) and (max-width: 475px) {
+    .footer_contact .footer_img_container img {
+        display: none;
+    }
+
+    .form_container {
+        margin: auto 2rem 4rem 2rem;
+    }
+}

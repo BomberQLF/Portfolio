@@ -249,10 +249,77 @@ $font-color-whiteish: #f1F1f1;
         .case_title {
           h1 {
             color: #fff;
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: "Helvetica Neue", sans-serif;
             font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+
+            a {
+                display: flex;
+
+                svg {
+                    height: 30px;
+                }
+            }
           }
         }
       }
     }
+  }
+
+  @media (min-width: 375px) and (max-width: 475px) {
+    .displayed_projects .img_container img {
+        max-width: calc(50vw - -10rem);
+    }
+
+    .prestige_yacht_mockup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .displayed_projects .img_container {
+        display: flex;
+        padding: 1% 1% 1% 2.8%;
+        flex-direction: column;
+    }
+
+    .my_work h1 {
+        padding-left: 2rem;
+    }
+
+    .my_work_filter {
+        flex-wrap: wrap;
+        padding: 0 0 0 2rem;
+    }
+
+    .my_work {
+        padding: 0;
+    }
+
+    .case {
+        width: 100%; 
+        margin-bottom: 20px; 
+      }
+    
+      .case .inner_case_container .case_img img {
+        height: 250px;
+      }
+    
+      .text_case_container {
+        padding: 10px;
+      }
+    
+      .case_title h1 {
+        font-size: 1rem; 
+      }
+    
+      .tags_container {
+        gap: 5px;
+      }
+    
+      .tags {
+        font-size: .8rem;
+        padding: 6px 10px;
+      }
   }
