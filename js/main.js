@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const sectionHeight = aboutSection.getBoundingClientRect().height;
       const screenHeight = window.innerHeight;
 
-      const triggerPoint = screenHeight * 0.65; 
-      const scrollPosition = (triggerPoint - sectionTop) / 1.2; 
+      const triggerPoint = screenHeight * 0.65;
+      const scrollPosition = (triggerPoint - sectionTop) / 1.2;
       const isSectionOutOfView = sectionTop + sectionHeight < 0;
 
       spans.forEach((span, index) => {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (scrollPosition > letterPosition && !isSectionOutOfView) {
           span.style.opacity = "1";
-          span.style.transition = `opacity 0.3s ease-out`; 
+          span.style.transition = `opacity 0.3s ease-out`;
         } else if (isSectionOutOfView) {
           span.style.opacity = "1";
         } else {
@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const sectionHeight = quoteSection.getBoundingClientRect().height;
       const screenHeight = window.innerHeight;
 
-      const triggerPoint = screenHeight * 0.65; 
-      const scrollPosition = (triggerPoint - sectionTop) / 1.2; 
+      const triggerPoint = screenHeight * 0.65;
+      const scrollPosition = (triggerPoint - sectionTop) / 1.2;
       const isSectionOutOfView = sectionTop + sectionHeight < 0;
 
       spans.forEach((span, index) => {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (scrollPosition > letterPosition && !isSectionOutOfView) {
           span.style.opacity = "1";
-          span.style.transition = `opacity 0.3s ease-out`; 
+          span.style.transition = `opacity 0.3s ease-out`;
         } else if (isSectionOutOfView) {
           span.style.opacity = "1";
         } else {
@@ -80,4 +80,55 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  // Page ABOUT ME - Photo
+
+  // Création du string "?" qui servira à afficher ma photo
+  let container = document.querySelector(".title_container");
+  let interrogation = document.createElement("span");
+  interrogation.classList.add("img_span");
+  interrogation.innerHTML = "?";
+  container.append(interrogation);
+
+  // Style du string "?"
+  interrogation.style.fontSize = "9rem";
+  interrogation.style.color = "#f1F1f1";
+  interrogation.style.fontFamily = "Helvetica Neue";
+  interrogation.style.position = "absolute";
+  interrogation.style.right = "400px";
+  interrogation.style.bottom = "200px";
+  interrogation.style.transform = "rotate3d(1, 1, 1, 45deg)";
+  interrogation.addEventListener("mouseover", (e) => {
+    e.target.style.cursor = "help";
+  });
+
+  // Création de l'image
+  let picture = document.createElement("img");
+  picture.classList.add = "myself";
+  picture.src = "../assets/img/myself.png";
+  container.append(picture);
+
+  // Style de l'image
+  picture.style.height = "430px";
+  picture.style.width = "430";
+  picture.style.position = "absolute";
+  picture.style.right = "170px";
+  picture.style.bottom = "30px";
+  picture.style.opacity = "0"; 
+  picture.style.transition = "opacity 4s";
+  picture.style.pointerEvents = "none";
+
+  // Affichage de l'image :
+  interrogation.addEventListener("click", (e) => {
+    // Transition pour masquer le point d'interrogation
+    interrogation.style.transition = "opacity 1s";
+    interrogation.style.opacity = "0";
+    interrogation.style.pointerEvents = "none";
+
+    // Transition pour afficher l'image
+    setTimeout(() => {
+      picture.style.opacity = "1";
+      picture.style.pointerEvents = "auto";
+    }, 1000);
+  });
 });
