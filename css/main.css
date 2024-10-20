@@ -369,6 +369,7 @@
 }
 
 .my_work {
+  display: none;
   padding-left: 8rem;
   margin-top: 6rem;
 }
@@ -411,7 +412,7 @@
 }
 
 .case_list {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   padding: 60px;
@@ -829,6 +830,7 @@ nav .contact_nav span:hover {
 }
 
 .introduction {
+  display: none;
   margin-top: 6rem;
   padding: 4%;
   height: 100vh;
@@ -880,7 +882,7 @@ nav .contact_nav span:hover {
 
 .quote {
   height: 100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -895,7 +897,7 @@ nav .contact_nav span:hover {
 }
 
 .grid_key {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(8, 1fr);
   gap: 20px;
@@ -949,7 +951,7 @@ nav .contact_nav span:hover {
 }
 
 .timeline {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: relative;
   margin: 50px 0;
@@ -1063,6 +1065,7 @@ nav .contact_nav span:hover {
   color: #f1F1f1;
   margin-bottom: 4rem;
   text-transform: uppercase;
+  display: none;
 }
 
 .skills-scroll {

@@ -95,6 +95,7 @@ nav {
 }
 
 .introduction {
+    display: none;
     margin-top: 6rem;
     padding: 4%;
     height: 100vh;
@@ -154,7 +155,7 @@ nav {
 
 .quote {
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     
@@ -171,7 +172,7 @@ nav {
 }
 
 .grid_key {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);  
     gap: 20px;
@@ -230,7 +231,7 @@ nav {
   }
 
   .timeline {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: relative;
     margin: 50px 0;
@@ -364,5 +365,6 @@ nav {
         color: $font-color-whiteish;
         margin-bottom: 4rem;
         text-transform: uppercase;
+        display: none;
     }
 }
