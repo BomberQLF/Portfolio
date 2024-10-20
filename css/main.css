@@ -122,7 +122,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 100px !important;
 }
 .hero_section .hero_bottom #left_nav {
   display: flex;
