@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (i === 0) {
                     a.id = 'home'; 
                     a.textContent = 'Home';
-                    a.href = '/Portfolio/App/index.html';
+                    a.href = '/Portfolio/index.html';
                 } else if (i === 1) {
                     a.id = 'nav_project'; 
                     a.textContent = 'Projects';
