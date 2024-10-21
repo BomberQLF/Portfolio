@@ -7,13 +7,6 @@ $font-color-contact-black: #1C1A13FF;
 $font-color-bg-blue-form: #4430cf;
 $font-color-whiteish: #f1F1f1;
 
-$font-family-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
-$font-color-beige: #D9D9D9AD;
-$font-color-blackish: #0e0e0e;
-$font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
-$font-color-whiteish: #f1f1f1;
-
 .testimonials {
     padding: 4rem 2rem;
     text-align: center;
@@ -38,19 +31,21 @@ $font-color-whiteish: #f1f1f1;
     .testimonial-container {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap; 
         gap: 2rem;
     }
 
     .testimonial-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         border-right: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 18px;
         padding: 1.5rem;
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        width: 430px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        max-width: 430px;
+        height: auto; 
         box-shadow: 0 -5px 10px rgb(94 93 93 / 7%), 0 5px 20px rgba(0, 0, 0, 0.05);
         
         .testimonial-text {
@@ -58,30 +53,34 @@ $font-color-whiteish: #f1f1f1;
             font-size: 1.1rem;
             color: $font-color-whiteish;
             margin-bottom: 1rem;
+            min-height: 120px; 
+            display: flex;
+            align-items: center;
+            text-align: center;
         }
-
+    
         .testimonial-footer {
             display: flex;
             align-items: center;
             gap: 1rem;
             margin-bottom: 1rem;
-
+    
             .client-photo {
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
                 object-fit: cover;
             }
-
+    
             .client-info {
                 text-align: left;
-
+    
                 .client-name {
                     font-weight: bold;
                     color: $font-color-whiteish;
                     margin: 0;
                 }
-
+    
                 .client-role {
                     font-size: 0.9rem;
                     color: #777;
@@ -89,15 +88,29 @@ $font-color-whiteish: #f1f1f1;
                 }
             }
         }
+    }    
+}
+
+@media (max-width: 768px) {
+    .testimonials .testimonial-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .testimonials .testimonial-card {
+        width: 90%;
+        max-width: 100%;
     }
 }
 
 @media (min-width: 375px) and (max-width: 475px) {
     .testimonials .testimonial-container {
-        display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .testimonials .testimonial-card {
+        width: 100%;
     }
 
     .testimonials .testimonial-card .testimonial-footer {
