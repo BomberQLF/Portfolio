@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     descriptionText.split("").forEach((letter) => {
       const span = document.createElement("span");
       span.textContent = letter;
-      span.style.opacity = "0"; // Initialement masqué
+      span.style.opacity = "0"; 
       description.appendChild(span);
     });
 
@@ -92,7 +92,7 @@ container.append(picture);
 
 // Style de l'image
 picture.style.height = "430px";
-picture.style.width = "430px"; // Correction : ajout du "px" pour la largeur
+picture.style.width = "430px";
 picture.style.position = "absolute";
 picture.style.right = "170px";
 picture.style.bottom = "30px";
@@ -104,5 +104,5 @@ picture.style.pointerEvents = "none";
 setTimeout(() => {
   picture.style.opacity = "1";
   picture.style.pointerEvents = "auto";
-}, 4500);
+}, 800);
 });

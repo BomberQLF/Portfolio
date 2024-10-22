@@ -95,7 +95,7 @@ nav {
 }
 
 .introduction {
-    display: none;
+    display: flex;
     margin-top: 6rem;
     padding: 4%;
     height: 100vh;
@@ -155,7 +155,7 @@ nav {
 
 .quote {
     height: 100vh;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     
@@ -172,9 +172,9 @@ nav {
 }
 
 .grid_key {
-    display: none;
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(8, 1fr);  
+    grid-template-rows: repeat(8, 1fr);
     gap: 20px;
     width: 100%;
     padding: 10% 4%;
@@ -190,7 +190,6 @@ nav {
     }
 
     .grid_item {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -202,36 +201,42 @@ nav {
         aspect-ratio: 1 / 1;
 
         &:hover {
-            background-color: #483c3ca8;
-            transition: .5s;
+            background-color: #b6b2b2a8;
+            transition: 0.5s;
         }
 
-        span {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 1.5rem;
-            font-family: $font-family-helvetica-neue;
-        }
+        .content_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
 
-        p {  
-            position: absolute;
-            font-size: 1.5rem;
-            opacity: 0.8;
-            margin: 10rem 0 1rem 1rem;
-            text-align: left;
-            font-family: $font-family-helvetica-neue;
+            span {
+                font-size: 1.5rem;
+                margin: 10px;
+                font-family: $font-family-helvetica-neue;
+            }
+
+            p {
+                font-size: 1.5rem;
+                opacity: 0.8;
+                margin: 10px;
+                font-family: $font-family-helvetica-neue;
+                text-align: left;
+            }
         }
     }
-  }
-  
-  .grid_item.filled {
-    background-color: #dddddd;
-    opacity: 0;
-  }
+
+    .grid_item.filled {
+        background-color: #dddddd;
+        opacity: 0;
+    }
+}
 
   .timeline {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: relative;
     margin: 50px 0;

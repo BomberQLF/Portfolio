@@ -150,7 +150,6 @@ $font-color-whiteish: #f1F1f1;
 // Projects list PAGE
 
 .my_work {
-    display: none;
     padding-left: 8rem;
     margin-top: 6rem;
 
@@ -198,7 +197,7 @@ $font-color-whiteish: #f1F1f1;
 }
 
 .case_list {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 60px;

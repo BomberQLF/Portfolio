@@ -369,7 +369,6 @@
 }
 
 .my_work {
-  display: none;
   padding-left: 8rem;
   margin-top: 6rem;
 }
@@ -412,7 +411,7 @@
 }
 
 .case_list {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 60px;
@@ -830,7 +829,7 @@ nav .contact_nav span:hover {
 }
 
 .introduction {
-  display: none;
+  display: flex;
   margin-top: 6rem;
   padding: 4%;
   height: 100vh;
@@ -882,7 +881,7 @@ nav .contact_nav span:hover {
 
 .quote {
   height: 100vh;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -897,7 +896,7 @@ nav .contact_nav span:hover {
 }
 
 .grid_key {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(8, 1fr);
   gap: 20px;
@@ -914,7 +913,6 @@ nav .contact_nav span:hover {
   text-transform: uppercase;
 }
 .grid_key .grid_item {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -926,32 +924,36 @@ nav .contact_nav span:hover {
   aspect-ratio: 1/1;
 }
 .grid_key .grid_item:hover {
-  background-color: rgba(72, 60, 60, 0.6588235294);
+  background-color: rgba(182, 178, 178, 0.6588235294);
   transition: 0.5s;
 }
-.grid_key .grid_item span {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.grid_key .grid_item .content_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+.grid_key .grid_item .content_wrapper span {
   font-size: 1.5rem;
+  margin: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.grid_key .grid_item p {
-  position: absolute;
+.grid_key .grid_item .content_wrapper p {
   font-size: 1.5rem;
   opacity: 0.8;
-  margin: 10rem 0 1rem 1rem;
-  text-align: left;
+  margin: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
 }
-
-.grid_item.filled {
+.grid_key .grid_item.filled {
   background-color: #dddddd;
   opacity: 0;
 }
 
 .timeline {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: relative;
   margin: 50px 0;
