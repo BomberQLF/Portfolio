@@ -3,13 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const hiddenSections = document.querySelector('.hidden');
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
-  const introduction = document.querySelector('.introduction');
-  const quote = document.querySelector('.quote');
-  const gridkey = document.querySelector('.grid_key');
-  const timeline = document.querySelector('.timeline');
-  const story = document.querySelector('.story');
-  const mywork = document.querySelector('.my_work');
-  const caseList = document.querySelector('.case_list');
 
   // Vérifie si loadingContainer existe avant d'appliquer les changements
   if (loadingContainer) {
@@ -18,13 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
       loadingContainer.style.display = 'none';
 
       // Vérifie si chaque section existe avant de modifier son style
-      if (caseList) caseList.style.display = "flex";
-      if (mywork) mywork.style.display = "block";
-      if (story) story.style.display = "block";
-      if (timeline) timeline.style.display = "flex";
-      if (gridkey) gridkey.style.display = "grid";
-      if (quote) quote.style.display = "flex";
-      if (introduction) introduction.style.display = "block";
       if (footer) {
         footer.style.display = "flex";
         footer.style.flexDirection = "column";
