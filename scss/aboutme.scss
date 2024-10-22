@@ -373,3 +373,38 @@ nav {
         display: none;
     }
 }
+
+@media (min-width: 375px) and (max-width: 450px) {
+    .grid_key {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .quote .quote_container p {
+        font-size: 1.5rem;
+        margin-top: 6rem;
+    }
+    .introduction .intro_wrapper h1 {
+        font-size: 2.5rem;
+        text-transform: none;
+    }
+
+    .myself {
+        height: 280px !important;
+        width: 280px !important;
+        position: relative !important;
+        margin-top: 5rem;
+        bottom: 0 !important;
+        right: 0 !important;
+    }
+    .grid_key .grid_title {
+        top: 88rem;
+    }
+
+    .grid_key .grid_item {
+        display: none;
+    }
+
+    .grid_key .grid_item.filled {
+        display: grid;
+    }
+}
