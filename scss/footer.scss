@@ -91,6 +91,26 @@ $font-color-whiteish: #f1F1f1;
     }    
 }
 
+.footer_about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .footer_about {
+        font-size: 6rem;
+        background: linear-gradient(90.01deg, rgba(255, 255, 255, 0.319) -8.79%, rgba(255, 255, 255, 0.49) 51.99%, rgba(255, 255, 255, 0) 109.94%) text;
+        color: transparent;
+        margin: 2rem 2rem 1.6rem 3rem;
+        transition: .4s;
+        font-family: $font-family-helvetica-neue;
+
+        &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .testimonials .testimonial-container {
         flex-direction: column; 
@@ -115,5 +135,9 @@ $font-color-whiteish: #f1F1f1;
 
     .testimonials .testimonial-card .testimonial-footer {
         justify-content: center;
+    }
+
+    .footer_about_container .footer_about {
+        font-size: 3.5rem;
     }
 }
