@@ -91,8 +91,11 @@ $font-color-whiteish: #f1F1f1;
     }    
 }
 
-.footer_about_container {
+#footer_about_container {
     display: flex;
+}
+.footer_about_container {
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100vh;

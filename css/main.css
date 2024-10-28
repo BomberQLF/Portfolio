@@ -1284,96 +1284,7 @@ nav .contact_nav span:hover {
   margin-top: 8rem;
   position: relative;
 }
-.footer_contact .contact_wrapper {
-  display: flex;
-  gap: 12rem;
-  justify-content: space-between;
-  position: relative;
-  margin-top: 4rem;
-}
-.footer_contact .footer_img_container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.footer_contact .footer_img_container img {
-  width: 100%;
-  height: auto;
-}
 
-.form_container {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 20rem 8rem auto;
-  position: relative;
-}
-.form_container h3 {
-  color: #f1f1f1;
-  font-size: 4rem;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.form_container form {
-  display: flex;
-  flex-direction: column;
-}
-.form_container form label {
-  color: #f1f1f1;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-.form_container form input[type=text],
-.form_container form input[type=tel] {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(217, 217, 217, 0.6784313725);
-  padding: 0.5rem 0;
-  font-size: 1rem;
-  color: #f1f1f1;
-  outline: none;
-  width: 130%;
-  transition: border-bottom 0.3s ease, color 0.3s ease;
-}
-.form_container form input[type=text]::placeholder,
-.form_container form input[type=tel]::placeholder {
-  color: rgba(217, 217, 217, 0.6784313725);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.form_container form input[type=text]:focus,
-.form_container form input[type=tel]:focus {
-  border-bottom: 2px solid #f1f1f1;
-}
-.form_container form input[type=text]:focus::placeholder,
-.form_container form input[type=tel]:focus::placeholder {
-  color: transparent;
-}
-.form_container form button[type=submit] {
-  background-color: transparent;
-  border: 1px solid #f1f1f1;
-  color: #f1f1f1;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 1.5rem;
-  width: fit-content;
-  align-self: left;
-}
-.form_container form button[type=submit]:hover {
-  color: rgba(217, 217, 217, 0.6784313725);
-  border: 1px solid rgba(217, 217, 217, 0.6784313725);
-}
-
-@media (min-width: 375px) and (max-width: 475px) {
-  .footer_contact .footer_img_container img {
-    display: none;
-  }
-  .form_container {
-    margin: auto 2rem 4rem 2rem;
-  }
-}
 .testimonials {
   padding: 4rem 2rem;
   text-align: center;
@@ -1447,8 +1358,12 @@ nav .contact_nav span:hover {
   margin: 0;
 }
 
-.footer_about_container {
+#footer_about_container {
   display: flex;
+}
+
+.footer_about_container {
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100vh;
