@@ -421,7 +421,7 @@ nav {
             align-items: center;
 
             .timeline_content {
-                width: 80%; /* Set to a narrower width for smaller screens */
+                width: 80%; 
                 margin-bottom: 2rem;
             }
 
@@ -429,13 +429,13 @@ nav {
                 justify-content: center;
 
                 &:before {
-                    content: none; /* Hide connecting lines for smaller screens */
+                    content: none; 
                 }
             }
         }
 
         .timeline_line {
-            left: 10%; /* Adjust line position */
+            left: 10%;
             width: 1px;
         }
     }
@@ -445,13 +445,13 @@ nav {
     .timeline {
         .timeline_container {
             .timeline_content {
-                width: 90%; /* Full width for very small screens */
-                padding: 15px; /* Slightly smaller padding */
+                width: 90%;
+                padding: 15px; 
             }
         }
 
         .timeline_line {
-            left: 5%; /* Further adjust line position */
+            left: 5%; 
         }
     }
 }
