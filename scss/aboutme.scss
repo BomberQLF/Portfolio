@@ -55,6 +55,10 @@ $font-color-whiteish: #f1F1f1;
         margin-left: -1rem;
         font-size: 1rem;
     }
+
+    .about_me .small_title_about span {
+        font-size: .8rem;
+    }
 }
 
 // MEDIA FOR DEVICES SUCH AS IPADS
@@ -398,7 +402,7 @@ nav {
         right: 0 !important;
     }
     .grid_key .grid_title {
-        top: 88rem;
+        top: 107rem;
     }
 
     .grid_key .grid_item {
