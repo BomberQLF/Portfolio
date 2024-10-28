@@ -5,6 +5,39 @@ $font-color-blackish: #0e0e0e;
 $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
 $font-color-whiteish: #f1F1f1;
 
+@keyframes growShrinkMobile {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(3); 
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOutMobile {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5; 
+  }
+}
+
+@keyframes fadeInMobile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 @keyframes growShrink {
   0% {
@@ -203,6 +236,16 @@ $font-color-whiteish: #f1F1f1;
 
 @media (min-width: 375px) and (max-width: 450px) {
   // Responsive for HERO SECTION
+  .loading_container {
+    svg {
+      animation: growShrinkMobile 5s forwards;
+    }
+  }
+
+  .hero_section {
+    animation: fadeInMobile 5s forwards;
+  }
+  
   .hero_section .hero {
     padding: 25% 11% 11% 11%;
 
@@ -261,6 +304,10 @@ $font-color-whiteish: #f1F1f1;
   .hero_section .contact_nav {
     display: none;
   }
+
+  .hero_section .hero_bottom .bottom_center {
+    display: none;
+}
 }
 
 // MEDIA for devices such as IPADS
