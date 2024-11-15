@@ -75,6 +75,10 @@ $font-color-whiteish: #f1F1f1;
                         border-bottom: 1px solid rgb(81, 80, 80);
                         width: 280px;
                         white-space: nowrap;
+
+                        &:hover {
+                            cursor:default;
+                        }
                     }
                 }
             }
