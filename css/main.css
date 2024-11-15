@@ -814,9 +814,9 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .about_me .description_about p {
-  line-height: 4rem;
+  line-height: 5rem;
   color: rgba(234, 232, 232, 0.861);
-  font-size: 2.2rem;
+  font-size: 3rem;
   font-family: "PP Neue Montreal", sans-serif;
   opacity: 0.7;
   margin-left: 3rem;
@@ -935,6 +935,11 @@ nav .contact_nav span:hover {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3rem;
   opacity: 0.7;
+}
+.quote .quote_container p .exercism-link-about {
+  background: linear-gradient(90deg, #b3b3b3, #f1f1f1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .grid_key {
@@ -1250,6 +1255,12 @@ nav .contact_nav span:hover {
   border-bottom: 1px solid rgb(81, 80, 80);
   width: 280px;
   white-space: nowrap;
+}
+.skills_section .skills_container .upper_container .under_skills_container .left_side .under_skills:hover,
+.skills_section .skills_container .upper_container .under_skills_container .right_side .under_skills:hover,
+.skills_section .skills_container .lower_container .under_skills_container .left_side .under_skills:hover,
+.skills_section .skills_container .lower_container .under_skills_container .right_side .under_skills:hover {
+  cursor: default;
 }
 
 @media (min-width: 375px) and (max-width: 450px) {
