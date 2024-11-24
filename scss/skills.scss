@@ -151,11 +151,15 @@ $font-color-whiteish: #f1F1f1;
 // MEDIA FOR DEVICES SUCH AS IPADS
 @media (min-width: 768px) and (max-width: 1024px) { 
     .skills-scroll {
-        top: 31rem;
+        display: none;
     }
 
     .skills_section {
         margin: 34rem 0 10rem 0;
+    }
+
+    #scrolling-work {
+       display: none;
     }
 
     .skills_section .skills_container .upper_container, .skills_section .skills_container .lower_container {
