@@ -99,6 +99,7 @@ picture.style.bottom = "30px";
 picture.style.opacity = "0";
 picture.style.transition = "opacity 4s";
 picture.style.pointerEvents = "none";
+picture.style.filter = "grayscale(1)";
 
 // Affichage de l'image après 2 secondes
 setTimeout(() => {
