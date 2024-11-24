@@ -235,6 +235,99 @@ $font-color-whiteish: #f1F1f1;
 
     }
 
+/* Responsive for screens between 475px and 768px */
+@media (min-width: 451px) and (max-width: 768px) {
+
+  .burgerIcon {
+    display: block !important;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin-right: 0.6rem;
+    }
+    .about_me .description_about p {
+      font-size: 2rem !important;
+  }
+  .hero_section .hero_bottom .bottom_center {
+    display: flex;
+    padding-left: 0;
+}
+  .hero_section .hero {
+    padding: 15% 8% 10% 8%;
+
+    .hero_center {
+      h1 {
+        font-size: 3rem; 
+      }
+    }
+
+    .year_of_birth,
+    .date_of_birth,
+    .hobby,
+    .year {
+      display: none;
+    }
+  }
+
+  .hero_section .hero_bottom {
+    margin-top: 6rem;
+
+    nav ul {
+      display: block;
+      padding: 0;
+      font-size: 0.8rem;
+    }
+  }
+
+  .hero_bottom .bottom_text .first_part,
+  .hero_bottom .bottom_text .second_part,
+  .hero_bottom .bottom_text .third_part {
+    span {
+      font-size: 1.2rem !important; 
+    }
+  }
+
+  .hero_section .hero_bottom .bottom_text {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+
+  .hero_section .hero .hero_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  .hero_section .hero .hero_center h2 {
+    font-family: "PP Neue Montreal", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  .hero_section .contact_nav {
+    display: none;
+  }
+
+  .hero_section .hero_bottom .bottom_center {
+    display: block;
+    padding-right: 1rem;
+    h2 {
+      width: auto;
+      font-size: 1rem;
+    }
+  }
+
+  #right_nav .frontendmentor {
+    width: 9rem;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 450px) {
   // Responsive for HERO SECTION
   .loading_container {
@@ -313,6 +406,9 @@ $font-color-whiteish: #f1F1f1;
 
 // MEDIA for devices such as IPADS
 @media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero_section .hero .hero_center h1 {
     font-size: 3.8rem;
 }
@@ -321,6 +417,13 @@ $font-color-whiteish: #f1F1f1;
   padding: 20% 11% 11% 11%;
 }
 
+.about_me {
+  height: 75vh !important;
+}
+.displayed_projects {
+  height: 0 !important;
+  gap: 3rem;
+}
 .hero_section .hero_bottom {
   margin-top: 8rem;
 }
