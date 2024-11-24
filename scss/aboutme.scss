@@ -5,6 +5,9 @@ $font-color-blackish: #0e0e0e;
 $font-family-pp-neue-montreal: 'PP Neue Montreal', sans-serif;
 $font-color-whiteish: #f1F1f1;
 
+.horizontal_body {
+    overflow-x: hidden;
+}
 
 .about_me {
     height: 100vh;
@@ -33,6 +36,10 @@ $font-color-whiteish: #f1F1f1;
         position: relative;
         bottom: 17rem;
         left: 1.5rem;
+    }
+
+    .about_me .description_about {
+        padding: 1rem;
     }
 
     .about_me .description_about p {
