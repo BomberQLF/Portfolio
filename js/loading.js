@@ -39,6 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (classFooter) {
         classFooter.style.display = 'flex';
       }
-    }, 4000);
+    }, 2300);
   }
 });
