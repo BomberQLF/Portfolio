@@ -13,18 +13,6 @@ $font-color-whiteish: #f1F1f1;
     align-items: center;
     padding: 1.5rem;
 
-    .small_title_about {
-        position: relative;
-        bottom: 22rem;
-        left: 5.5rem;
-
-        span {
-            color: $font-color-whiteish;
-            text-transform: uppercase;
-            font-family: $font-family-helvetica-neue;
-        }
-    }
-
     .description_about {
         p {
             line-height: 5rem;
