@@ -99,8 +99,9 @@ $font-color-whiteish: #f1F1f1;
     position: fixed;
     right: 0;
     z-index: 2;
+    display: block !important;
 
-    span {
+    a {
       text-transform: uppercase;
       text-decoration: none;
       color: $font-color-whiteish;
@@ -205,7 +206,7 @@ $font-color-whiteish: #f1F1f1;
       h2 {
         font-family: $font-family-ibm-plex-mono;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
     }
 
@@ -310,10 +311,6 @@ $font-color-whiteish: #f1F1f1;
     font-size: 1.3rem;
   }
 
-  .hero_section .contact_nav {
-    display: none;
-  }
-
   .hero_section .hero_bottom .bottom_center {
     display: block;
     padding-right: 1rem;
@@ -393,10 +390,6 @@ $font-color-whiteish: #f1F1f1;
     font-family: "PP Neue Montreal", sans-serif;
     text-transform: uppercase;
     font-size: 1.1rem;
-  }
-
-  .hero_section .contact_nav {
-    display: none;
   }
 
   .hero_section .hero_bottom .bottom_center {
