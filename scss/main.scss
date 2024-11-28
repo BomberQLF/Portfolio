@@ -35,13 +35,6 @@ body {
       }
 }
 
-.burgerIcon {
-  display: none;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
 
 footer {
   display: none;
@@ -52,33 +45,4 @@ footer {
   height: 30px;
   width: 30px;
   display: inline-block;
-}
-
-@media (min-width: 375px) and (max-width: 450px) {
-  #nav-bar {
-    display: none;
-  }
-
-  .burgerIcon {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    margin-right: .6rem;
-  }
-}
-
-// MEDIA for devices such as IPADS
-@media (min-width: 768px) and (max-width: 1024px) {
-  .burgerIcon {
-    display: block;
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    margin-right: .6rem;
-  }
 }
