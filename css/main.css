@@ -900,9 +900,6 @@
     top: 55px;
     left: 30px;
   }
-  .contact_nav {
-    display: none;
-  }
   .projects_wrapper .lower_teaser .teaser_details_container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1687,6 +1684,23 @@ body {
 }
 body main {
   display: none;
+}
+
+.back {
+  position: absolute;
+  left: 36px;
+  font-size: 1.2rem;
+  color: #ede8e4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 34px;
+}
+
+.back > a {
+  text-decoration: none;
+  padding-bottom: 1.5px;
+  border-bottom: 1px solid #ede8e4;
+  color: #ede8e4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 footer {
