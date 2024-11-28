@@ -92,8 +92,9 @@
   position: fixed;
   right: 0;
   z-index: 2;
+  display: block !important;
 }
-.hero_section .contact_nav span {
+.hero_section .contact_nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #f1F1f1;
@@ -101,7 +102,7 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
 }
-.hero_section .contact_nav span:hover {
+.hero_section .contact_nav a:hover {
   cursor: pointer;
 }
 .hero_section #vanta-bg {
@@ -185,7 +186,7 @@
 .hero_section .hero_bottom .bottom_center h2 {
   font-family: "IBM Plex Mono", monospace;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .hero_section .hero_bottom #right_nav {
   display: flex;
@@ -269,9 +270,6 @@
     text-transform: uppercase;
     font-size: 1.3rem;
   }
-  .hero_section .contact_nav {
-    display: none;
-  }
   .hero_section .hero_bottom .bottom_center {
     display: block;
     padding-right: 1rem;
@@ -332,9 +330,6 @@
     font-family: "PP Neue Montreal", sans-serif;
     text-transform: uppercase;
     font-size: 1.1rem;
-  }
-  .hero_section .contact_nav {
-    display: none;
   }
   .hero_section .hero_bottom .bottom_center {
     display: none;
@@ -404,8 +399,7 @@
   overflow: hidden;
   position: relative;
   top: -3.2rem;
-  background-color: rgba(217, 217, 217, 0.6784313725);
-  color: #0e0e0e;
+  color: rgba(245, 245, 245, 0.6);
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 6rem;
   margin-top: 40px;
@@ -976,7 +970,7 @@ nav .contact_nav {
   z-index: 2;
   bottom: 53rem;
 }
-nav .contact_nav span {
+nav .contact_nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #f1F1f1;
@@ -984,7 +978,7 @@ nav .contact_nav span {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.3rem;
 }
-nav .contact_nav span:hover {
+nav .contact_nav a:hover {
   cursor: pointer;
 }
 
@@ -1579,6 +1573,7 @@ nav .contact_nav span:hover {
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 1.2rem;
   color: rgba(217, 217, 217, 0.6784313725);
+  text-align: left;
 }
 .testimonials h2 + p {
   margin-bottom: 3rem;
@@ -1694,13 +1689,6 @@ body main {
   display: none;
 }
 
-.burgerIcon {
-  display: none;
-}
-.burgerIcon:hover {
-  cursor: pointer;
-}
-
 footer {
   display: none;
 }
@@ -1709,32 +1697,6 @@ footer {
   height: 30px;
   width: 30px;
   display: inline-block;
-}
-
-@media (min-width: 375px) and (max-width: 450px) {
-  #nav-bar {
-    display: none;
-  }
-  .burgerIcon {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    margin-right: 0.6rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .burgerIcon {
-    display: block;
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    margin-right: 0.6rem;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
