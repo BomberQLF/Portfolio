@@ -92,7 +92,8 @@
   position: fixed;
   right: 0;
   z-index: 2;
-  display: block !important;
+  display: flex !important;
+  gap: 2rem;
 }
 .hero_section .contact_nav a {
   text-transform: uppercase;
@@ -100,7 +101,7 @@
   color: #f1F1f1;
   border-bottom: 1px solid #f1F1f1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .hero_section .contact_nav a:hover {
   cursor: pointer;
@@ -222,6 +223,9 @@
   }
   .about_me .description_about p {
     font-size: 2rem !important;
+    line-height: 4rem !important;
+    margin-left: 0 !important;
+    width: 30rem !important;
   }
   .hero_section .hero_bottom .bottom_center {
     display: flex;
@@ -365,6 +369,10 @@
     width: 11rem;
   }
 }
+.project-body {
+  margin-top: 180px;
+}
+
 .project_section {
   display: flex;
   flex-direction: column;
@@ -591,9 +599,26 @@
   height: 30px;
 }
 
+.back-details {
+  left: 59px !important;
+  top: 60px !important;
+}
+
 @media (min-width: 375px) and (max-width: 475px) {
   .displayed_projects .img_container img {
     max-width: calc(50vw + 10rem);
+  }
+  .back {
+    font-size: 1rem !important;
+    left: 36px !important;
+    top: 100px !important;
+  }
+  .back-details {
+    font-size: 1rem;
+    color: #ede8e4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    left: 36px !important;
+    top: 24px !important;
   }
   .prestige_yacht_mockup {
     display: flex;
@@ -642,6 +667,11 @@
   }
   .my_work {
     padding-left: 3rem;
+  }
+  .back-details {
+    left: 31px !important;
+    font-size: 1rem !important;
+    top: 20px !important;
   }
   .case {
     width: 100%;
@@ -926,6 +956,7 @@
   font-family: "PP Neue Montreal", sans-serif;
   opacity: 0.7;
   margin-left: 3rem;
+  width: 70rem;
 }
 
 @media (min-width: 375px) and (max-width: 450px) {
@@ -966,14 +997,16 @@ nav .contact_nav {
   right: 0;
   z-index: 2;
   bottom: 53rem;
+  display: flex;
+  gap: 2rem;
 }
 nav .contact_nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #f1F1f1;
   border-bottom: 1px solid #f1F1f1;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.3rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
 }
 nav .contact_nav a:hover {
   cursor: pointer;
@@ -1017,12 +1050,11 @@ nav .contact_nav a:hover {
   font-size: 1.3rem;
   color: #d2d0d0;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
   padding: 10px 20px;
   border-radius: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border: 1px solid rgba(217, 217, 217, 0.4235294118);
+  border: 1px solid rgb(217, 217, 217);
   width: fit-content;
   transition: 0.5s;
 }
@@ -1240,6 +1272,14 @@ nav .contact_nav a:hover {
     font-size: 1.2rem;
     padding: 8px 16px;
   }
+  .about-back {
+    position: absolute;
+    left: 36px !important;
+    font-size: 1.2rem;
+    color: #ede8e4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    top: 60px !important;
+  }
   .quote {
     padding: 3% 5%;
   }
@@ -1272,6 +1312,14 @@ nav .contact_nav a:hover {
   .introduction .intro_wrapper .title_container .download_cv {
     font-size: 1.1rem;
     padding: 6px 14px;
+  }
+  .about-back {
+    position: absolute;
+    left: 45px !important;
+    font-size: 1.2rem;
+    color: #ede8e4;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    top: 50px !important;
   }
   .grid_key {
     grid-template-columns: repeat(3, 1fr);
@@ -1331,6 +1379,10 @@ nav .contact_nav a:hover {
     font-size: 1.6rem;
     text-align: center;
   }
+  .about-back {
+    left: 16px !important;
+    top: 70px !important;
+  }
 }
 @media (min-width: 375px) and (max-width: 450px) {
   .grid_key {
@@ -1362,6 +1414,10 @@ nav .contact_nav a:hover {
   }
   .grid_key .grid_item.filled {
     display: grid;
+  }
+  .about-back {
+    left: 16px !important;
+    top: 70px !important;
   }
 }
 @media (max-width: 768px) {
@@ -1568,12 +1624,16 @@ nav .contact_nav a:hover {
 }
 .testimonials p {
   font-family: "PP Neue Montreal", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: rgba(217, 217, 217, 0.6784313725);
   text-align: left;
 }
 .testimonials h2 + p {
   margin-bottom: 3rem;
+  width: 41rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .testimonials .testimonial-container {
   display: flex;
@@ -1688,11 +1748,20 @@ body main {
 
 .back {
   position: absolute;
-  left: 36px;
+  left: 126px;
   font-size: 1.2rem;
   color: #ede8e4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  top: 34px;
+  top: 100px;
+}
+
+.about-back {
+  position: absolute;
+  left: 56px;
+  font-size: 1.2rem;
+  color: #ede8e4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 100px;
 }
 
 .back > a {

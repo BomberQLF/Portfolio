@@ -8,6 +8,10 @@ $font-color-whiteish: #f1F1f1;
 
 // LANDING PAGE CSS
 
+.project-body {
+  margin-top: 180px;
+}
+
 .project_section {
     display: flex;
     flex-direction: column;
@@ -266,10 +270,26 @@ $font-color-whiteish: #f1F1f1;
       }
     }
   }
+  .back-details {
+    left: 59px !important;
+    top: 60px !important;
+  }
 
   @media (min-width: 375px) and (max-width: 475px) {
     .displayed_projects .img_container img {
         max-width: calc(50vw - -10rem);
+    }
+    .back {
+      font-size: 1rem !important;
+      left: 36px !important;
+      top: 100px !important;
+    }
+    .back-details {
+      font-size: 1rem;
+      color: #ede8e4;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      left: 36px !important;
+      top: 24px !important;
     }
 
     .prestige_yacht_mockup {
@@ -329,6 +349,11 @@ $font-color-whiteish: #f1F1f1;
     }
     .my_work {
         padding-left: 3rem;
+    }
+    .back-details {
+      left: 31px !important;
+      font-size: 1rem !important;
+      top: 20px !important;
     }
     .case {
         width: 100%; 

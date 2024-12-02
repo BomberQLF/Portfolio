@@ -99,7 +99,8 @@ $font-color-whiteish: #f1F1f1;
     position: fixed;
     right: 0;
     z-index: 2;
-    display: block !important;
+    display: flex !important;
+    gap: 2rem;
 
     a {
       text-transform: uppercase;
@@ -107,7 +108,7 @@ $font-color-whiteish: #f1F1f1;
       color: $font-color-whiteish;
       border-bottom: 1px solid $font-color-whiteish;
       font-family: $font-family-helvetica-neue;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
 
       &:hover {
         cursor: pointer;
@@ -250,6 +251,9 @@ $font-color-whiteish: #f1F1f1;
     }
     .about_me .description_about p {
       font-size: 2rem !important;
+      line-height: 4rem !important;
+      margin-left: 0 !important;
+      width: 30rem !important;
   }
   .hero_section .hero_bottom .bottom_center {
     display: flex;
