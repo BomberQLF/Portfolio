@@ -37,11 +37,19 @@ body {
 
 .back {
   position: absolute;
-  left: 36px;
+  left: 126px;
   font-size: 1.2rem;
-  color: $font-color-beige;
-  font-family: $font-family-helvetica-neue;
-  top: 34px;
+  color: #ede8e4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 100px;
+}
+.about-back {
+  position: absolute;
+  left: 56px;
+  font-size: 1.2rem;
+  color: #ede8e4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  top: 100px;
 }
 .back > a {
   text-decoration: none;
