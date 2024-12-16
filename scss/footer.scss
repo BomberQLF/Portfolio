@@ -133,6 +133,10 @@ $font-color-whiteish: #f1F1f1;
         align-items: center;
     }
 
+    .testimonials h2 + p {
+        width: 20rem;
+    }
+
     .testimonials .testimonial-card {
         width: 100%;
     }

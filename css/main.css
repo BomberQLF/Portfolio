@@ -975,6 +975,7 @@
     opacity: 1;
     margin-left: -1rem;
     font-size: 1rem;
+    width: 20rem;
   }
   .about_me .small_title_about span {
     font-size: 0.8rem;
@@ -1723,6 +1724,9 @@ nav .contact_nav a:hover {
   .testimonials .testimonial-container {
     flex-direction: column;
     align-items: center;
+  }
+  .testimonials h2 + p {
+    width: 20rem;
   }
   .testimonials .testimonial-card {
     width: 100%;
