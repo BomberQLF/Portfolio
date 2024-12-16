@@ -81,6 +81,7 @@ nav {
         bottom: 53rem;
         display: flex;
         gap: 2rem;
+        mix-blend-mode: difference;
 
         a {
             text-transform: uppercase;

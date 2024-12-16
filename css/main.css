@@ -1000,6 +1000,7 @@ nav .contact_nav {
   bottom: 53rem;
   display: flex;
   gap: 2rem;
+  mix-blend-mode: difference;
 }
 nav .contact_nav a {
   text-transform: uppercase;
