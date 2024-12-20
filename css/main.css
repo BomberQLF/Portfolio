@@ -481,7 +481,6 @@
 .displayed_projects .more_projects {
   display: flex;
   margin-top: 3rem;
-  margin-left: 1.7rem;
   padding: 1%;
 }
 .displayed_projects .more_projects a {
