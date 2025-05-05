@@ -410,6 +410,7 @@
   color: rgba(245, 245, 245, 0.6);
   font-family: "PP Neue Montreal", sans-serif;
   font-size: 6rem;
+  margin-top: 80px;
   margin-bottom: 80px;
   white-space: nowrap;
 }
@@ -481,7 +482,7 @@
 .displayed_projects .more_projects {
   display: flex;
   margin-top: 3rem;
-  padding: 1%;
+  padding: 2%;
 }
 .displayed_projects .more_projects a {
   color: #f1F1f1;
@@ -1784,6 +1785,12 @@ footer {
   height: 30px;
   width: 30px;
   display: inline-block;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body, .skills_section {
+    overflow-x: hidden;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

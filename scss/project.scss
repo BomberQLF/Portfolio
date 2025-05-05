@@ -51,6 +51,7 @@ $font-color-whiteish: #f1F1f1;
     color: rgb(245 245 245 / 60%);
     font-family: $font-family-pp-neue-montreal;
     font-size: 6rem;
+    margin-top: 80px;
     margin-bottom: 80px;
     white-space: nowrap;
 }
@@ -130,7 +131,7 @@ $font-color-whiteish: #f1F1f1;
     .more_projects {
         display: flex;
         margin-top: 3rem;
-        padding: 1%;
+        padding: 2%;
 
         a {
             color: $font-color-whiteish;
